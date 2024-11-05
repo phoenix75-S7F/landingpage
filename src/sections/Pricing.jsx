@@ -8,6 +8,9 @@ import Button from "../components/Button";
 const Pricing = () => {
 	const [monthly, setMonthly] = useState(false);
 
+	// teste
+	// teste 2
+
 	return (
 		<section>
 			<Element name="pricing">
