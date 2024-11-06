@@ -17,7 +17,7 @@ const Hero = () => {
                     <p className="max-w-440 mb-14 body-1 max-md:mb-10">
                        Projetamos o ERP para ser fácil de usar, rápido de aprender e surpreendentemente poderoso.
                     </p>
-                    <LinkScroll to="features" offset={-100} spy smooth>
+                    <LinkScroll to="funcionalidades" offset={-100} spy smooth>
                        <Button icon="/images/zap.svg">
                         Saiba Mais!
                        </Button> 
