@@ -1,4 +1,4 @@
-export const features = [
+export const funcionalidades = [
     {
       id: '0',
       icon: '/images/feature-1.png',
@@ -7,7 +7,7 @@ export const features = [
       text: "Módulo fiscal completo (NF-e, NFS-e, NFC-e, MDF-e), Loja Virtual integrada, Gestão de Produção completa, Central de integrações com marketplaces.",
       button: {
         icon: '/images/magictouch.svg',
-        title: 'Saiba mais',
+        title: 'Entre em Contato',
       },
     },
     {
@@ -18,7 +18,7 @@ export const features = [
       text: 'Mercado Livre, Shopee, Casas Bahia, Correios, NuvemShop, Shopify, Amazon, Americanas ... Entre outros!',
       button: {
         icon: '/images/docs.svg',
-        title: 'Saiba mais',
+        title: 'Entre em Contato',
       },
     },
   ];
@@ -49,57 +49,57 @@ export const features = [
   export const faq = [
     {
       id: '0',
-      question: 'How easy is it to setup Xora?',
+      question: 'Como é o sistema "ERP - PONTO ZERO ?"',
       answer:
-        'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+        'Um ERP completo para empresas de todos os segmentos gerenciarem estoque, financeiro, vendas, fiscal, compras e mais uma série de ferramentas importantes para a saúde financeira de qualquer empresa.',
     },
     {
       id: '1',
-      question: 'Can I integrate Xora with other platforms?',
+      question: 'Gestão Financeira Eficiente!',
       answer:
-        'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+        'Tenha uma plataforma inteira totalmente interligada para emitir boletos, enviar cobranças, controlar receitas e despesas. Assim, você controla o fluxo de caixa quando e onde desejar.',
     },
     {
       id: '2',
-      question: 'How often do you add new content?',
+      question: 'Módulo Fiscal Ilimitado!',
       answer:
-        'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+        'Emita e gerencie todos os seus documentos fiscais em uma única plataforma, rápida e fácil de usar. Extraia o XML de todas as notas emitidas, gere NFe, NFCe, CTe, MDFe, SPED Fiscal e muito mais.',
     },
     {
       id: '3',
-      question: 'What your refund policy?',
+      question: 'Gestão de Estoque!',
       answer:
-        'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+        'Gerencie múltiplos depósitos, controle compras de insumos, mercadorias por lote, validade ou número de série. Tenha recursos como cotações online, cadastros por nota de entrada e muito mais.',
     },
     {
       id: '4',
-      question: 'Do you have corporate plans?',
+      question: 'Sistema de Frente de Caixa!',
       answer:
-        'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+        'Sistema para registrar vendas, emitir NFC-e e CF-e SAT, integrado com financeiro e estoque. Você pode usá-lo com leitor de código de barras e impressoras não fiscais. Disponível online e offline.',
     },
     {
       id: '5',
-      question: 'What happens when I’m out of storage?',
+      question: 'Central de Integrações!',
       answer:
-        'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+        'Com a central de integrações do Venda ERP você conecta seu sistema com mais de uma loja em cada plataforma. E, claro, pode gerenciar todas as suas operações, estoques, vendas, emissão de notas, controle de pagamentos e entregas.',
     },
     {
       id: '6',
-      question: 'Can I upgrade my plan?',
+      question: 'Vários Relatorios!',
       answer:
-        'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+        'Acompanhe sua empresa de ponta a ponta, com relatórios financeiros, de lucratividade, de vendas, de estoque e fiscais para ajudar na tomada de decisões. E se precisar, você ainda pode personalizar relatórios específicos para o seu negócio!',
     },
     {
       id: '7',
-      question: 'How do I invite my team?',
+      question: 'CRM e Força de Vendas',
       answer:
-        'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+        'Recursos para ter visão ampla e precisa sobre todos os indicativos de suas oportunidades de negócio, força de vendas, campanhas, avaliação de ações e agendamentos, através de uma série de gráficos com os resultados diários.',
     },
     {
       id: '8',
-      question: 'Do you offer training for individuals and teams?',
+      question: 'Gestão de Produção (PCP)',
       answer:
-        'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+        'Ideal para indústrias de todos os tamanhos, temos um moderno e intuitivo módulo de gestão de produção, com OPs, simulação de produção e outros recursos, como o Bloco K e H, exigências do SPED Fiscal.',
     },
     {
       id: '9',
@@ -109,13 +109,13 @@ export const features = [
     },
   ];
   
-  export const plans = [
+  export const preços = [
     {
       id: '0',
-      title: 'Silver',
+      title: 'Basico',
       priceMonthly: 150.00,
       priceYearly: 99.00,
-      caption: 'Best for solo creators',
+      caption: 'Recursos essenciais para administração da sua empresa.',
       features: [
         '100MB Cloud storage',
         '100+ prompt templates',
@@ -127,10 +127,10 @@ export const features = [
     },
     {
       id: '1',
-      title: 'Gold',
+      title: 'Intermediário',
       priceMonthly: 190.00,
       priceYearly: 120.00,
-      caption: 'Most popular plan',
+      caption: 'Funcionalidades para uma administração mais abrangente da sua empresa.',
       features: [
         'All Starter features',
         '1TB additional storage',
@@ -142,10 +142,10 @@ export const features = [
     },
     {
       id: '2',
-      title: 'Diamond',
+      title: 'Avançado',
       priceMonthly: 250.00,
       priceYearly: 180.00,
-      caption: 'Exclusively for teams',
+      caption: 'O pacote mais completo para atender todas as necessidades de administração de uma empresa.',
       features: [
         'All Overdrive features',
         '10TB additional storage',
@@ -160,51 +160,51 @@ export const features = [
   export const testimonials = [
     {
       id: '0',
-      name: 'Jessica Saunders',
-      role: 'Globalnomads',
+      name: 'Jessica Silva',
+      role: 'GlobalModas',
       avatarUrl: '/images/testimonials/jessica-saunders.png',
       comment:
-        "Xora's customer support is second to none! They’re like my tech superheroes, always there when I need them.",
+        "“Desde que implementamos o ERP, conseguimos reduzir o tempo de nossas operações em mais de 30%. Todos os departamentos estão integrados, e agora acessamos informações essenciais em apenas alguns cliques!”",
     },
     {
       id: '1',
-      name: 'Mark Erixon',
-      role: 'Vid capital intl',
+      name: 'Marco Aurélio',
+      role: 'Papel & CIA',
       avatarUrl: '/images/testimonials/mark-erixon.png',
       comment:
-        "I was skeptical at first, but now I can't imagine our content operations without it. It's that impactful.",
+        "“O sistema é muito intuitivo e fácil de usar! Nossos colaboradores se adaptaram rapidamente, e o suporte ao cliente sempre responde rápido. Nunca foi tão simples gerenciar nossas finanças e estoque.”",
     },
     {
       id: '2',
-      name: 'Melanie Hurst',
-      role: 'Cyberleap',
+      name: 'Elaine Maria',
+      role: 'Cyber-Leaps',
       avatarUrl: '/images/testimonials/melanie-hurst.png',
       comment:
-        "Adopting this software was a breeze. It's made everyday tasks so much simpler.",
+        "“O ERP permite uma personalização incrível que atendeu exatamente às nossas necessidades. Ajustamos os relatórios e módulos de acordo com nossas operações específicas, o que nos deu muito mais controle e flexibilidade.”",
     },
     {
       id: '3',
-      name: 'Alicia Barker',
-      role: 'Cyberleap',
+      name: 'Alicia Cunha',
+      role: 'VidaNutri Pharma',
       avatarUrl: '/images/testimonials/alicia-barker.png',
       comment:
-        "The analytics feature is like having a personal fortune teller. It's been instrumental in guiding our business decisions.",
+        "“Em menos de seis meses, o ERP gerou um retorno claro sobre o investimento, ajudando a reduzir desperdícios e custos operacionais. Agora, temos uma visão clara do fluxo de caixa e conseguimos tomar decisões estratégicas para expandir o negócio.”",
     },
     {
       id: '4',
-      name: 'Becky Snider',
-      role: 'Floclips',
+      name: 'Heloá Franco',
+      role: 'Bão - Boi Churrasco',
       avatarUrl: '/images/testimonials/becky-snider.png',
       comment:
-        "Switched to Xora last month, and I'm already seeing results. Best decision for our team!",
+        "“O suporte é excelente e nos ajudou muito com a integração com outros sistemas que usamos. Todos os dados estão no mesmo lugar, facilitando nosso dia a dia e melhorando a colaboração entre as equipes!”",
     },
     {
       id: '5',
-      name: 'Jim Bradley',
-      role: 'Vid capital intl',
+      name: 'Sérgio Neto',
+      role: 'Fazenda Verdes Campos',
       avatarUrl: '/images/testimonials/jim-bradley.png',
       comment:
-        'The efficiency boost is undeniable. This platform has transformed our workflow, forever.',
+        '“O aumento de eficiência é inegável. Esta plataforma transformou nosso fluxo de trabalho para sempre.”',
     },
   ];
   

@@ -2,18 +2,15 @@ import { Element } from "react-scroll";
 import { useState } from "react";
 import clsx from "clsx";
 import CountUp from "react-countup";
-import { features, plans } from "../constants";
+import { funcionalidades, preços } from "../constants";
 import Button from "../components/Button";
 
 const Pricing = () => {
 	const [monthly, setMonthly] = useState(false);
 
-	// teste
-	// teste 2
-
 	return (
 		<section>
-			<Element name="pricing">
+			<Element name="preços">
 				<div className="container">
 					<div className="max-w-960 pricing-head_before relative mx-auto border-l border-r border-s2 bg-s1/50 pb-40 pt-28 max-xl:max-w-4xl max-lg:border-none max-md:pb-32 max-md:pt-16">
 						<h3 className="h3 max-lg:h4 max-md:h5 z-3 relative mx-auto mb-14 max-w-lg text-center text-p4 max-md:mb-11 max-sm:max-w-sm">
@@ -62,7 +59,7 @@ const Pricing = () => {
 					<div
 						className="scroll-hide relative z-2 -mt-12 flex items-start 
                 max-xl:gap-5 max-xl:overflow-auto max-xl:pt-6">
-						{plans.map((plan, index) => (
+						{preços.map((plan, index) => (
 							<div
 								key={plan.id}
 								className="pricing-plan_first pricing-plan_last pricing-plan_odd pricing-plan_even relative border-2 p-7 max-xl:min-w-80 max-lg:rounded-3xl xl:w-[calc(33.33%+2px)]">
@@ -102,7 +99,7 @@ const Pricing = () => {
 										<div
 											className={clsx(
 												"h-num flex items-start",
-												index === 1 ? "text-p3" : "text-p4",
+												index === 1 ? "text-orange-500" : "text-p4",
 											)}>
 											R${"  "}
 											<CountUp
@@ -120,7 +117,7 @@ const Pricing = () => {
 								</div>
 								<div
 									className={clsx(
-										"body-1 relative z-2 mb-10 w-full border-b-s2 pb-9 text-center text-p4",
+										"body-2 relative z-2 mb-10 w-full border-b-s2 pb-9 text-center text-yellow-200",
 										index === 1 && "border-b",
 									)}>
 									{plan.caption}
