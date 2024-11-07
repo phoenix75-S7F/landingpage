@@ -45,6 +45,24 @@ export const funcionalidades = [
       title: 'PetShop, Casas de Ração, Veterinario, etc',
     },
   ];
+
+  export const contacts = [
+    {
+      id: '0',
+      icon: '/images/marcador.png',
+      title: 'Rua X, Centro, Mogi das Cruzes - SP',
+    },
+    {
+      id: '1',
+      icon: '/images/fone.png',
+      title: '(11) 99958-4751',
+    },
+    {
+      id: '2',
+      icon: '/images/envelope.png',
+      title: 'sfrancoff@gmail.com',
+    },   
+  ];
   
   export const faq = [
     {
