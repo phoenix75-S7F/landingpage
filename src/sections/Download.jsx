@@ -5,9 +5,7 @@ import Marker from "../components/Marker";
 const Download = () => {
 	return (
 		<section>
-			<Element
-				name="contato"
-				className="g7 relative pb-32 pt-24 max-lg:pb-24 max-md:py-16">
+			<Element name="contato" className="g7 relative pb-32 pt-24 max-lg:pb-24 max-md:py-16">
 				<div className="container">
 					<div className="flex items-center">
 						<div className="relative mr-6 flex-540 max-xl:flex-280 max-lg:flex-256 max-md:flex-100">

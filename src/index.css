@@ -301,7 +301,23 @@
     @apply absolute top-6 size-2.5 rounded-half;
   }
 
-  /*  END of Download*/
+    /*  END of Download*/
+  /*  START of Contact */
+  .contact_preview-before {
+    @apply before:g8 before:absolute before:-top-0.5 before:right-6 before:h-0.5 before:w-[63.2%] before:opacity-40 before:content-[''];
+  }
+
+  .contact_preview-after {
+    @apply after:g8 after:absolute after:-bottom-0.5 after:left-6 after:h-0.5 after:w-[42.2%] after:opacity-40 after:content-[''];
+  }
+
+  .contact_preview-dot {
+    @apply absolute top-6 size-2.5 rounded-half;
+  }
+
+
+
+  /*  END of Contact*/
   /*  START of Footer */
   .legal-after {
     @apply after:absolute after:-right-5 after:top-[calc(50%-1px)] after:h-0.5 after:w-0.5 after:rounded-half after:bg-p2 after:content-[''];

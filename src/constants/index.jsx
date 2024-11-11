@@ -121,9 +121,9 @@ export const funcionalidades = [
     },
     {
       id: '9',
-      question: 'I’m locked out of my account what do I do?',
+      question: 'Prestação de Seriços',
       answer:
-        'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+        'Emissão de NFS-e, gestão de contratos, ordens de serviços, técnicos, frotas.',
     },
   ];
   

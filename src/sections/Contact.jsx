@@ -1,13 +1,14 @@
 import { Element, Link as LinkScroll } from "react-scroll"
 import { contacts } from "../constants"
 import FormContact from "../components/FormContact"
-import Button from "../components/Button"
+
 
 const Contact = () => {
   return (
     <section>
       {/* <div className="container"> */}
-          <div className="max-w-1230 pricing-head_before relative mx-auto border-l border-r border-s2 bg-s1/50 pt-28 max-xl:max-w-4xl max-lg:border-none max-md:pb-32 max-md:pt-16">
+        <Element name="contato">
+          <div className="max-w-1230 contact_preview-before contact_preview-after relative mx-auto border-l border-r border-s2 bg-s1/50 pt-28 max-xl:max-w-4xl max-lg:border-none max-md:pb-32 max-md:pt-16">
                <h3 className="h3 max-lg:h4 max-md:h5 z-3 relative mx-auto -mt-24 mb-10 max-w-lg text-center text-p4 max-md:mb-11 max-sm:max-w-sm">
                    Contato
                </h3>
@@ -59,6 +60,7 @@ const Contact = () => {
             
             </div>
       {/* </div> */}
+      </Element>
     </section>
   )
 }
