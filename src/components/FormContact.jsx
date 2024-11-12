@@ -100,7 +100,7 @@ const FormContact = () => {
               </div>
             </div>
          
-            <div className="ml-80 -mr-512 -mt-60">
+            <div className="2xl:ml-80 xs:ml-32 -mr-512 xs:-mr-512 -mt-60">
               <label htmlFor="message" className="block text-sm/6 font-semibold text-p3">
                 Messagem
               </label>

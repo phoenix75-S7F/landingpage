@@ -9,15 +9,15 @@ const Contact = () => {
       {/* <div className="container"> */}
         <Element name="contato" className="relative">
         <div className="container relative z-2 py-28"> 
-          <div className="max-w-1230 faq-line_after faq-glow_before relative mx-auto border-l border-r border-s2 bg-s1/50 pt-28 max-xl:max-w-4xl max-lg:border-none max-md:pb-32 max-md:pt-16">
-               <h3 className="h3 max-lg:h4 max-md:h5 z-3 relative mx-auto -mt-24 mb-10 max-w-lg text-center text-p4 max-md:mb-11 max-sm:max-w-sm">
+          <div className="max-w-1230 faq-line_after faq-glow_before relative mx-auto border-l border-r border-s2 bg-s1/50 pt-28 max-xl:max-w-4xl max-lg:border-none max-sm:pb-32 max-w-80::pt-16">
+               <h3 className="h3 max-lg:h4 max-sm:h5 z-3 relative mx-auto -mt-24 mb-10 max-w-lg text-center text-p4 max-md:mb-11 max-xs:max-w-80">
                    Contato
                </h3>
                <p className="body-1 text-center text-p4 -mt-9">
                   Tire suas dúvidas ou envie uma sugestão.
                </p>      
 
-              <div className="h-640 relative flex justify-around flex-grow px-[5%] border-2 border-s3 rounded-7xl max-sm:hidden">
+              <div className="h-640 relative flex justify-around flex-grow px-[5%] border-2 border-s3 rounded-7xl max-w-80:hidden">
 
            
                <ul className="h-56 grid grid-cols-3 gap-4 content-center mt-48">
@@ -35,9 +35,9 @@ const Contact = () => {
                                />
                            </div>
 
-                           <h3 className="relative z-1 max-w-40 mx-auto my-0 base-bold text-p3 text-center">
+                           <h3 className="relative z-1 max-w-80 mx-auto my-0 xl:base-bold xs:base-bold-1 text-p3 text-center">
                                {title}
-                            </h3>
+                           </h3>
                        </li>    
                      ))}
 
