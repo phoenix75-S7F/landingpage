@@ -7,8 +7,9 @@ const Contact = () => {
   return (
     <section>
       {/* <div className="container"> */}
-        <Element name="contato">
-          <div className="max-w-1230 contact_preview-before contact_preview-after relative mx-auto border-l border-r border-s2 bg-s1/50 pt-28 max-xl:max-w-4xl max-lg:border-none max-md:pb-32 max-md:pt-16">
+        <Element name="contato" className="relative">
+        <div className="container relative z-2 py-28"> 
+          <div className="max-w-1230 faq-line_after faq-glow_before relative mx-auto border-l border-r border-s2 bg-s1/50 pt-28 max-xl:max-w-4xl max-lg:border-none max-md:pb-32 max-md:pt-16">
                <h3 className="h3 max-lg:h4 max-md:h5 z-3 relative mx-auto -mt-24 mb-10 max-w-lg text-center text-p4 max-md:mb-11 max-sm:max-w-sm">
                    Contato
                </h3>
@@ -16,7 +17,7 @@ const Contact = () => {
                   Tire suas dúvidas ou envie uma sugestão.
                </p>      
 
-              <div className="h-640 relative flex justify-around flex-grow px-[5%] border-2 border-s3 rounded-7xl max-md:hidden">
+              <div className="h-640 relative flex justify-around flex-grow px-[5%] border-2 border-s3 rounded-7xl max-sm:hidden">
 
            
                <ul className="h-56 grid grid-cols-3 gap-4 content-center mt-48">
@@ -59,7 +60,7 @@ const Contact = () => {
                     
             
             </div>
-      {/* </div> */}
+       </div>
       </Element>
     </section>
   )
