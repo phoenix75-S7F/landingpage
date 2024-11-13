@@ -40,25 +40,11 @@ const Contact = () => {
                            </h3>
                        </li>    
                      ))}
-
-                      <FormContact/>
-
+                   
+                     <FormContact/>                 
 
                 </ul>
-{/* 
-                      <LinkScroll to="funcionalidades" offset={-100} spy smooth>
-                       <Button icon="/images/zap.svg">
-                        Saiba Mais!
-                       </Button> 
-                      </LinkScroll> */}
-
-              </div>  
-              
-                    
-            
-                   
-                    
-            
+              </div> 
             </div>
        </div>
       </Element>

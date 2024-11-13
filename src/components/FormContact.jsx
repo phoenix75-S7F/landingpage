@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Field, Label, Switch } from '@headlessui/react'
 import { Element, Link as LinkScroll } from "react-scroll"
-import Button from "../components/Button"
+import Button from "./Button"
 import emailjs from "@emailjs/browser"
 import ToastAnimated, { showToast } from "../ui-lib/toast";
 
@@ -46,8 +46,9 @@ const FormContact = () => {
     return (
       // <div className="container">
       //  className="mx-auto mt-16 max-w-xl sm:mt-48"
-       
-        <form className="mt-10" onSubmit={sendEmail}>
+      <section>
+       <div className="container mx-auto mt-8 mb-0 text-left">
+        <form className="mt-10 flex flex-col gap-0 xl:max-w-xs " onSubmit={sendEmail}>
           {/* <div className="grid justify-items-start grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2"> */}
             <div>
               <label htmlFor="seu-nome" className="block text-sm/6 font-semibold text-p3">
@@ -99,9 +100,12 @@ const FormContact = () => {
                 />
               </div>
             </div>
+
+             {/* <div className="2xl:ml-80 xs:ml-32 -mr-512 xs:-mr-512 -mt-60"></div> */}
+             {/* <div className="2xl:ml-80 xs:ml-80 -mr-512 xs:-mr-512 -mt-60"></div> */}
          
-            <div className="2xl:ml-80 xs:ml-32 -mr-512 xs:-mr-512 -mt-60">
-              <label htmlFor="message" className="block text-sm/6 font-semibold text-p3">
+            <div className="2xl:ml-80 sm:ml-36 md:ml-56 lg:ml-48 xl:ml-52 xs:ml-24 -mt-60">
+              <label htmlFor="message" className="text-sm/6 font-semibold text-p3">
                 Messagem
               </label>
               <div className="mb-4">
@@ -109,7 +113,7 @@ const FormContact = () => {
                   id="message"
                   name="message"
                   rows={8}                  
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6"
+                  className="2xl:w-80 sm:w-36 md:w-96 lg:w-48 xl:w-52 xs:w-36 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6"                 
                   onChange={(e) => setMessage(e.target.value)}
                   value={message}
                 />
@@ -129,7 +133,12 @@ const FormContact = () => {
           {/* </div> */}
        
         </form>
+       </div>  
+      </section>     
       // </div>
+
+     
+
     )
   }
 
