@@ -83,6 +83,8 @@ export default {
       },
       screens: {
         'xs': '320px', // Para telas menores ainda
+        'ls': '480px',
+        'ml': '560px',
         'sm': '640px', 
         'md': '768px',
         'lg': '1024px',

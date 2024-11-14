@@ -121,7 +121,7 @@ export const funcionalidades = [
     },
     {
       id: '9',
-      question: 'Prestação de Seriços',
+      question: 'Prestação de Serviços',
       answer:
         'Emissão de NFS-e, gestão de contratos, ordens de serviços, técnicos, frotas.',
     },
