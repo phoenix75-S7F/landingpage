@@ -31,7 +31,7 @@ const Contact = () => {
                                <img 
                                  src={icon}
                                  alt={title}
-                                 className="size-17/20 object-contain z-20"
+                                 className="size-15/20 object-contain z-20 rounded-full hover:bg-amber-400"
                                />
                            </div>
 
