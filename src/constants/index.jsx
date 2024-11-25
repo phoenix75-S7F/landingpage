@@ -8,6 +8,7 @@ export const funcionalidades = [
       button: {
         icon: '/images/magictouch.svg',
         title: 'Entre em Contato',
+        url: '/contato',
       },
     },
     {
@@ -19,6 +20,7 @@ export const funcionalidades = [
       button: {
         icon: '/images/docs.svg',
         title: 'Entre em Contato',
+        url: '/contato',
       },
     },
   ];

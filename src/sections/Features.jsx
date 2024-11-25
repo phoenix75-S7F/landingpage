@@ -1,6 +1,21 @@
-import { Element } from "react-scroll"
+import { Element, Link as LinkScroll } from "react-scroll"
 import { details, funcionalidades } from "../constants"
 import Button from "../components/Button"
+
+const NavLink = ({title}) => (
+  <LinkScroll 
+      onClick={() => setIsOpen(false)}
+      to={title}
+      offset={-100}
+      spy
+      smooth
+      activeClass="nav-active"
+      className="base-bold text-p4 uppercase 
+      transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
+  >
+      {title}
+  </LinkScroll>
+)
 
 const Features = () => {
   return (
@@ -20,7 +35,12 @@ const Features = () => {
                       <p className="caption mb-5 max-md:mb-6">{caption}</p>
                       <h2 className="max-w-400 mb-7 h3 text-p4 max-md:mb-6 max-md:h5">{title}</h2>
                       <p className="mb-11 body-1 max-md:mb-8 max-md:body-3">{text}</p>
-                      <Button icon={button.icon}>{button.title}</Button>
+                      <Button icon={button.icon}>
+                        <LinkScroll to="contato">
+                           {button.title}
+                        </LinkScroll>
+                        
+                      </Button>
                     </div>
                 ))}
 
