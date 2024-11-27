@@ -16,10 +16,10 @@ const App = () => {
 			<Features />
 			<Pricing />
 			<Faq />
-			<Testimonials/>
-			<Download/>
-			<Contact/>
-			<Footer/>
+			<Testimonials />
+			<Download />
+			<Contact />			
+			<Footer />
 		</main>
 	);
 };

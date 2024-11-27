@@ -25,6 +25,44 @@ export const funcionalidades = [
     },
   ];
   
+  export const sobre = [
+    {
+      id: '0',
+      icon: '/images/pzero.png',
+      caption: 'Fácil integração',
+      title: 'Ponto Zero Soluções',
+      text: "Nossa empresa kldlkjfldsfjldfmn,cmnv,xc mx,cvnoioiuoiasd aisduaosiduaos asiduaosduoppasidausdasgdhkgkhahsdgkasdgkhgh",
+      button: {
+        icon: '/images/magictouch.svg',
+        title: 'Voltar',
+        url: '/',
+      },
+    },    
+  ];
+
+  export const detailsAbout = [
+    {
+      id: '0',
+      icon: '/images/detail-1.png',
+      title: 'CEO - Alexandre Giovanini',
+    },
+    {
+      id: '1',
+      icon: '/images/detail-2.png',
+      title: 'CTO - Sérgio Franco',
+    },
+    {
+      id: '2',
+      icon: '/images/detail-3.png',
+      title: 'CMO - Julia Giovanini',
+    },
+    {
+      id: '3',
+      icon: '/images/detail-4.png',
+      title: 'CFO - Rafaela Ferreira',
+    },
+  ];
+  
   export const details = [
     {
       id: '0',
@@ -62,7 +100,7 @@ export const funcionalidades = [
     {
       id: '2',
       icon: '/images/envelope.png',
-      title: 'sfrancoff@gmail.com',
+      title: 'contato@pontozerosolucoes.com.br',
     },   
   ];
   
@@ -446,4 +484,13 @@ export const funcionalidades = [
       icon: '/images/socials/discord.svg',
       url: '#',
     },
+  ];
+
+  export const otherPages = [
+    {
+      id: '0',
+      imgURL: "/icons/home.svg",
+      url: "/about",
+      title: "Sobre a Empresa",
+    },  
   ];
