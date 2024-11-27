@@ -34,7 +34,7 @@ export const funcionalidades = [
       text: "Nossa empresa kldlkjfldsfjldfmn,cmnv,xc mx,cvnoioiuoiasd aisduaosiduaos asiduaosduoppasidausdasgdhkgkhahsdgkasdgkhgh",
       button: {
         icon: '/images/magictouch.svg',
-        title: 'Voltar',
+        title: 'Fechar',
         url: '/',
       },
     },    
@@ -44,22 +44,26 @@ export const funcionalidades = [
     {
       id: '0',
       icon: '/images/detail-1.png',
-      title: 'CEO - Alexandre Giovanini',
+      caption:'CEO',
+      title: 'Alexandre Giovanini',
     },
     {
       id: '1',
       icon: '/images/detail-2.png',
-      title: 'CTO - Sérgio Franco',
+      caption:'CTO',
+      title: 'Sérgio Franco',
     },
     {
       id: '2',
       icon: '/images/detail-3.png',
-      title: 'CMO - Julia Giovanini',
+      caption:'CMO',
+      title: 'Julia Giovanini',
     },
     {
       id: '3',
       icon: '/images/detail-4.png',
-      title: 'CFO - Rafaela Ferreira',
+      caption:'CFO',
+      title: 'Rafaela Ferreira',
     },
   ];
   

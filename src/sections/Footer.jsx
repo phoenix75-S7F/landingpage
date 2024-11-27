@@ -5,7 +5,7 @@ import About from "../components/About.jsx";
 function handleAbout() {
 
   const root = ReactDOM.createRoot(document.getElementById("root"));
-  const element = <About />;
+  const element = <About />; 
   root.render(element);
 }
 
@@ -22,9 +22,7 @@ const Footer = () => {
               Termos de Uso
             </p>
 
-            <p
-              onClick={handleAbout}
-              className="text-p5 transition-all duration-500 hover:text-p1 cursor-pointer">
+            <p onClick={handleAbout} className="text-p5 transition-all duration-500 hover:text-p1 cursor-pointer">
               Sobre a Empresa
             </p>
           </div>
