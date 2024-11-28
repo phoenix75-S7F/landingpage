@@ -19,7 +19,7 @@ const About = () => {
   return (
     <section className="relative pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32 xs:ml-24">
       <Element name="funcionalidades">
-        <div className="container">
+        <div className="container lg:ml-auto xs:-ml-12">
           <div className="relative flex md:flex-wrap flex-nowrap border-2 border-s3 rounded-7xl md:overflow-hidden max-md:flex-col feature-after md:g7 max-md:border-none max-md:rounded-none max-md:gap-3">
             {sobre.map(({ id, icon, caption, title, text, button }) => (
               <div
