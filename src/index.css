@@ -84,6 +84,10 @@
     @apply text-[8px] font-bold leading-[16px];
   }
 
+  .base-bold-2 {
+    @apply text-[5px] font-bold leading-[16px];
+  }
+
   .base-small {
     @apply text-[14px] font-semibold leading-[18px] tracking-[0.03em];
   }

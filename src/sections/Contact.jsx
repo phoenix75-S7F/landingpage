@@ -35,7 +35,7 @@ const Contact = () => {
                                />
                            </div>
 
-                           <h3 className="relative z-1 max-w-80 mx-auto my-0 xl:base-bold xs:base-bold-1 text-p3 text-center">
+                           <h3 className="relative z-1 max-w-80 mx-auto my-0 xl:base-bold xs:base-bold-2 text-p3 text-center">
                                {title}
                            </h3>
                        </li>    
