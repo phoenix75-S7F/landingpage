@@ -17,14 +17,14 @@ function homePage() {
 }
 const About = () => {
   return (
-    <section className="relative pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32">
+    <section className="relative pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32 xs:ml-24">
       <Element name="funcionalidades">
         <div className="container">
           <div className="relative flex md:flex-wrap flex-nowrap border-2 border-s3 rounded-7xl md:overflow-hidden max-md:flex-col feature-after md:g7 max-md:border-none max-md:rounded-none max-md:gap-3">
             {sobre.map(({ id, icon, caption, title, text, button }) => (
               <div
                 key={id}
-                className="relative z-2 md:px-10 px-5 md:pb-10 pb-5 flex-auto  max-md:g7 max-md:border-2 max-md:border-s3 max-md:rounded-3xl max-md:flex-320">
+                className="relative z-2 md:px-10 px-5 md:pb-10 pb-5 flex-auto max-md:g7 max-md:border-2 max-md:border-s3 max-md:rounded-3xl max-md:flex-320">
                 <div className="w-full flex justify-center items-center">
                   <div className="-ml-3 mb-12 flex items-center justify-center flex-col">
                     {/* <div className="w-0.5 h-16 bg-s3" /> */}
@@ -44,7 +44,7 @@ const About = () => {
                 </div>
                 <div className=" mb-12 flex items-center justify-center flex-col">
                   {/* <p className="max-w-screen-sm justify-items-center mb-11 body-1 max-md:mb-8 max-md:body-3"> */}
-                  <p className="flex -mt-12 text-[22px] text-purple-200 text-center ">
+                  <p className="flex -mt-12 2xl:text-[22px] xl:text-[22px] lg:text-[22px] md:text-[22px] text-purple-200 text-center xs:text-[9px]">
                     {text}
                   </p>
                 </div>

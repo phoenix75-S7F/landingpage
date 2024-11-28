@@ -98,8 +98,8 @@ export const funcionalidades = [
     },
     {
       id: '1',
-      icon: '/images/fone.png',
-      title: '(11) 99958-4751',
+      icon: '/images/faq-logo.png',
+      title: 'Ponto Zero',
     },
     {
       id: '2',
