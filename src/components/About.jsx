@@ -31,7 +31,7 @@ const About = () => {
 
                     <img
                       src={icon}
-                      className="size-60 object-contain"
+                      className="size-48 object-contain rounded-full mt-8"
                       alt={title}
                     />
                   </div>

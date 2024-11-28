@@ -28,7 +28,7 @@ export const funcionalidades = [
   export const sobre = [
     {
       id: '0',
-      icon: '/images/pzero.png',
+      icon: '/images/faq-logo.png',
       caption: 'Fácil integração',
       title: 'Ponto Zero Soluções',
       text: "Nossa empresa kldlkjfldsfjldfmn,cmnv,xc mx,cvnoioiuoiasd aisduaosiduaos asiduaosduoppasidausdasgdhkgkhahsdgkasdgkhgh",
