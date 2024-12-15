@@ -2,7 +2,7 @@ import * as ReactDOM from 'react-dom/client'
 import { Element, Link as LinkScroll } from "react-scroll";
 import { detailsAbout, sobre } from "../constants";
 import { StrictMode } from 'react'
-import App from '../App.jsx'
+import App from '../App'
 import '../index.css'
 import Button from "./Button";
 
