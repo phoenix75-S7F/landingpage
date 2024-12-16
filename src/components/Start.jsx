@@ -160,9 +160,9 @@ const Start = () => {
 
         <footer className="footer">
           <div className="footer_image" onClick={handleLoggOut}>
-            <img src="/images/logout.svg" alt="sair" />             
+            <img src="/images/logout.svg" alt="phx" />             
           </div>
-          <h1 className="text-16 font-semibold text-center text-p3">Voltar</h1>
+          <p className="text-16 cursor-pointer font-semibold text-center text-p3" onClick={handleLoggOut}>Voltar</p>
         </footer>
       </>    
     </section>

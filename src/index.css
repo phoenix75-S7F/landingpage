@@ -429,12 +429,12 @@
     @apply text-12 text-red-500;
   }
 
-  .footer_image {
-    @apply relative cursor-pointer size-5 ml-48 max-xl:w-full max-xl:flex max-xl:justify-center max-xl:items-center max-sm:w-full max-sm:flex max-sm:justify-center max-sm:items-center;
+  .footer {
+    @apply flex cursor-pointer items-center justify-between gap-2 py-0;
   }
 
-  .footer {
-    @apply flex cursor-pointer ml-512 items-center justify-between gap-2 py-0;
+  .footer_image {
+    @apply relative size-5 max-xl:w-full max-xl:flex max-xl:justify-center max-xl:items-center max-sm:w-full max-sm:flex max-sm:justify-center max-sm:items-center;
   }
 
   /* .form-btn {
