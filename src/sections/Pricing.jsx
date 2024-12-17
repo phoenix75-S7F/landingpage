@@ -11,7 +11,7 @@ import Startpage from '../pages/Startpage';
 function handleStart(index) {
   console.log(index)
   const root = ReactDOM.createRoot(document.getElementById("root"));
-  const element = <Startpage type={index}/>;
+  const element = <Startpage id={index}/>;
   root.render(element);
 }
 

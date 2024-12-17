@@ -18,6 +18,7 @@ import {
 import { Input } from "@/components/ui/input";
 import CustomInput from "./CustomInput";
 import Button from "./Button";
+import { preços } from "../constants";
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -30,7 +31,7 @@ const handleLoggOut = () => {
   window.location = '/';  
 }
 
-const Start = () => {
+const Start = (id) => {
   const form = useForm();
 
   return (
@@ -46,6 +47,7 @@ const Start = () => {
             className="relative p-8"
           />
         </div>
+        {/* <h1>{plano}</h1> */}
         {/* <h1 className="text-26 font-ibm-plex-serif font-bold text-black-1">
           Ponto Zero
         </h1> */}
