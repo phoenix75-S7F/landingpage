@@ -37,7 +37,7 @@ const Start = () => {
     <section className="auth-form-1">
       <header className="flex flex-col gap-5 md:gap-8">
         {/* <Link href="/" className="cursor-pointer flex items-center gap-1"> */}
-        <div className="cursor-pointer flex items-center gap-1 -mt-16">
+        <div className="cursor-pointer flex items-center gap-1 -mt-10">
           <img
             src="/images/pzero.png"
             width={260}
@@ -109,21 +109,21 @@ const Start = () => {
                   placeholder="Entre com CEP"
                 />
               </div>
-              <div className="flex gap-4">
+              {/* <div className="flex gap-4"> */}
                 <CustomInput
                   control={form.control}
-                  name="dateOfBirth"
-                  label="Dt. Nascimento"
-                  placeholder="11/11/1111"
+                  name="company"
+                  label="Empresa"
+                  placeholder="Ponto Zero Soluções"
                 />
 
-                <CustomInput
+                {/* <CustomInput
                   control={form.control}
                   name="ssn"
                   label="SSN"
                   placeholder="Ex: 1234"
-                />
-              </div>
+                /> */}
+              {/* </div> */}
             </>
 
             {/* <CustomInput

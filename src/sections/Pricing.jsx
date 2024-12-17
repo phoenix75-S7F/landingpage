@@ -8,10 +8,10 @@ import Button from "../components/Button";
 // import Start from '../components/Start'
 import Startpage from '../pages/Startpage';
 
-function handleStart() {
-  // console.log("CLIQUEI!")
+function handleStart(index) {
+  console.log(index)
   const root = ReactDOM.createRoot(document.getElementById("root"));
-  const element = <Startpage />;
+  const element = <Startpage type={index}/>;
   root.render(element);
 }
 
@@ -149,7 +149,7 @@ const Pricing = () => {
                 </ul>
 
                 <div className="mt-10 flex w-full justify-center">
-                  <Button icon={plan.icon} onClick={handleStart}>
+                  <Button icon={plan.icon} onClick={() => handleStart(index)}>
                     Começar Agora
                   </Button>
                 </div>
