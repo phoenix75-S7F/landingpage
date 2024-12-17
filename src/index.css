@@ -414,7 +414,7 @@
   }
 
   .auth-form-1 {
-    @apply flex ml-36 w-full max-w-[420px] xs:ml-0 flex-col items-center gap-5 py-10 md:gap-8;          
+    @apply flex ml-36 w-full max-w-[420px] xs:ml-3 xs:mr-3 xs:gap-4 xs:-mb-px md:container flex-col items-center gap-5 py-10 md:gap-8;          
   }
 
   .auth-form-2 {
