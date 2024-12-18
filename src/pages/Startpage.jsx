@@ -1,11 +1,10 @@
 import Start from "@/components/Start";
 
-const Startpage = (id) => {
-  console.log("Produto " + id)
-  console.log(id)
+const Startpage = (plan) => {
+    
   return (
     <main className="flex min-h-screen w-full justify-between font-inter z-10" >
-      <Start id={id}/>
+      <Start plan={plan}/>
       <div className="auth-asset">
         <div className="absolute bg-slate-400 opacity-100 top-[0%] left-[-7%] right-0 h-full w-[1px] z-10"/>
         <div>

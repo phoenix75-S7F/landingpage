@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import clsx from "clsx";
 
 // import { Button } from "@/components/ui/button";
 import {
@@ -26,18 +27,22 @@ const formSchema = z.object({
   }),
 });
 
-
 const handleLoggOut = () => {
-  window.location = '/';  
-}
+  window.location = "/";
+};
 
-const Start = (id) => {
+const Start = (plan) => {
   const form = useForm();
+
+  console.log(plan)
+  const planos = {
+    title: plan.plan.type.title,
+    price: plan.plan.type.priceMonthly,
+  };
 
   return (
     <section className="auth-form-1">
       <header className="flex flex-col gap-5 md:gap-8">
-        {/* <Link href="/" className="cursor-pointer flex items-center gap-1"> */}
         <div className="cursor-pointer flex items-center gap-1 -mt-10">
           <img
             src="/images/pzero.png"
@@ -47,18 +52,11 @@ const Start = (id) => {
             className="relative p-8"
           />
         </div>
-        {/* <h1>{plano}</h1> */}
-        {/* <h1 className="text-26 font-ibm-plex-serif font-bold text-black-1">
-          Ponto Zero
-        </h1> */}
-        {/* </Link> */}
       </header>
       <div className="p-0 -mt-10 gap-1 md:gap-3">
-        {/* <h1 className="text-24 lg:text-36 font-semibold text-gray-900"> */}
         <p className="text-16 font-semibold text-center text-p3">
           Por Favor, entre com seus Dados
         </p>
-        {/* </h1> */}
       </div>
 
       <>
@@ -112,20 +110,34 @@ const Start = (id) => {
                 />
               </div>
               {/* <div className="flex gap-4"> */}
-                <CustomInput
-                  control={form.control}
-                  name="company"
-                  label="Empresa"
-                  placeholder="Ponto Zero Soluções"
-                />
+              <CustomInput
+                control={form.control}
+                name="company"
+                label="Empresa"
+                placeholder="Ponto Zero Soluções"
+              />
 
-                {/* <CustomInput
+              {/* <CustomInput
                   control={form.control}
                   name="ssn"
                   label="SSN"
                   placeholder="Ex: 1234"
                 /> */}
               {/* </div> */}
+              {/* {preços.map((plan, index) => ( */}
+              <div className="mt-8 text-center">
+                <h1 className="text-p3 font-bold">Sua escolha foi o plano:</h1>
+              </div>
+
+              <div
+                className={clsx(
+                  "small-2 rounded-20 relative z-2 mb-6 border-2 font-bold px-4 py-1.5 uppercase",
+                  1 === 2 ? "border-p3 text-p3 text-center" : "border-p1 text-p1 text-center",
+                )}>
+                {planos.title} - R$ {planos.price},00 Mês/Ano
+              </div>
+
+              {/* ))} */}
             </>
 
             {/* <CustomInput
@@ -158,15 +170,21 @@ const Start = (id) => {
           </form>
         </Form>
 
-        <Button className="mt-2" href="/">Enviar</Button>
+        <Button className="mt-2" href="/">
+          Enviar
+        </Button>
 
         <footer className="footer">
           <div className="footer_image" onClick={handleLoggOut}>
-            <img src="/images/logout.svg" alt="phx" />             
+            <img src="/images/logout.svg" alt="phx" />
           </div>
-          <p className="text-16 cursor-pointer font-semibold text-center text-p3" onClick={handleLoggOut}>Voltar</p>
+          <p
+            className="text-16 cursor-pointer font-semibold text-center text-p3"
+            onClick={handleLoggOut}>
+            Voltar
+          </p>
         </footer>
-      </>    
+      </>
     </section>
   );
 };
