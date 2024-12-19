@@ -4,125 +4,85 @@ const TextTerms = () => {
   return (
     <div>
       <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold mb-4">Privacy Policy</h1>
+        <h1 class="text-3xl font-bold mb-4 text-p3 underline">Termos de Uso</h1>
 
-        <p class="mb-4">
+        {/* <p class="mb-4">
           This privacy policy sets out how our website uses and protects any
           information that you give us when you use this website.
-        </p>
+        </p> */}
 
-        <h2 class="text-2xl font-bold mb-2">Information We Collect</h2>
-
-        <p class="mb-4">We may collect the following information:</p>
-
-        <ul class="list-disc list-inside mb-4">
-          <li>Your name and contact information</li>
-          <li>Demographic information</li>
-          <li>Other information relevant to customer surveys and/or offers</li>
-        </ul>
-
-        <h2 class="text-2xl font-bold mb-2">How We Use the Information</h2>
+        <h2 class="text-2xl font-bold mb-2 text-p3">Introdução</h2>
 
         <p class="mb-4">
-          We require this information to understand your needs and provide you
-          with a better service, and in particular for the following reasons:
+          Bem-vindo ao Ponto Zero Soluções! Ao acessar e utilizar nosso site e
+          serviços, você concorda com os termos e condições descritos abaixo.
+          Por favor, leia atentamente antes de continuar.
         </p>
 
-        <ul class="list-disc list-inside mb-4">
-          <li>Internal record keeping</li>
-          <li>Improving our products and services</li>
-          <li>
-            Sending promotional emails about new products, special offers, or
-            other information which we think you may find interesting
-          </li>
-          <li>
-            From time to time, we may also use your information to contact you
-            for market research purposes. We may contact you by email, phone, or
-            mail. We may use the information to customize the website according
-            to your interests.
-          </li>
-        </ul>
-
-        <h2 class="text-2xl font-bold mb-2">Security</h2>
+        <h2 class="text-2xl font-bold mb-2 text-p3">Uso do Site</h2>
 
         <p class="mb-4">
-          We are committed to ensuring that your information is secure. In order
-          to prevent unauthorized access or disclosure, we have put in place
-          suitable physical, electronic, and managerial procedures to safeguard
-          and secure the information we collect online.
+          Você pode acessar nosso site para obter informações sobre nossos
+          produtos e serviços. No entanto, o uso do site está sujeito às
+          condições descritas neste documento.
         </p>
 
-        <h2 class="text-2xl font-bold mb-2">Cookies</h2>
+        <h2 class="text-2xl font-bold mb-2 text-p3">Registro e Conta</h2>
 
         <p class="mb-4">
-          A cookie is a small file that asks permission to be placed on your
-          computer's hard drive. Once you agree, the file is added, and the
-          cookie helps analyze web traffic or lets you know when you visit a
-          particular site. Cookies allow web applications to respond to you as
-          an individual. The web application can tailor its operations to your
-          needs, likes, and dislikes by gathering and remembering information
-          about your preferences.
+          Para utilizar alguns dos nossos serviços, pode ser necessário criar
+          uma conta. Ao se registrar, você concorda em fornecer informações
+          verdadeiras e atualizadas.
         </p>
+
+        <h2 class="text-2xl font-bold mb-2 text-p3">Responsabilidades do Usuário</h2>
 
         <p class="mb-4">
-          Overall, cookies help us provide you with a better website by enabling
-          us to monitor which pages you find useful and which you do not. A
-          cookie in no way gives us access to your computer or any information
-          about you, other than the data you choose to share with us.
+          Você é responsável por manter a segurança de suas credenciais de login
+          e não deve compartilhá-las com terceiros. Você também é responsável
+          por qualquer atividade realizada sob sua conta.
         </p>
 
-        <h2 class="text-2xl font-bold mb-2">Links to Other Websites</h2>
+        <h2 class="text-2xl font-bold mb-2 text-p3">Propriedade Intelectual</h2>
 
         <p class="mb-4">
-          Our website may contain links to other websites of interest. However,
-          once you have used these links to leave our site, you should note that
-          we do not have any control over that other website. Therefore, we
-          cannot be responsible for the protection and privacy of any
-          information which you provide whilst visiting such sites and such
-          sites are not governed by this privacy statement. You should exercise
-          caution and look at the privacy statement applicable to the website in
-          question.
+          Todos os direitos autorais, marcas registradas e outros direitos de
+          propriedade intelectual relacionados a este site são de propriedade da
+          Ponto Zero Soluções. Você não pode usar o conteúdo deste site sem
+          nossa permissão.
         </p>
 
-        <h2 class="text-2xl font-bold mb-2">
-          Controlling Your Personal Information
-        </h2>
+        <h2 class="text-2xl font-bold mb-2 text-p3">Modificações</h2>
 
         <p class="mb-4">
-          You may choose to restrict the collection or use of your personal
-          information in the following ways:
+          Estes termos de uso podem ser modificados a qualquer momento.
+          Continuar a utilizar o site após a publicação de qualquer modificação
+          constitui aceitação dessas mudanças.
         </p>
 
-        <ul class="list-disc list-inside mb-4">
-          <li>
-            If you have previously agreed to us using your personal information
-            for direct marketing purposes, you may change your mind at any time
-            by writing to or emailing us at [email protected]
-          </li>
-          <li>
-            We will not sell, distribute, or lease your personal information to
-            third parties unless we have your permission or are required by law
-            to do so. We may use your personal information to send you
-            promotional information about third parties which we think you may
-            find interesting if you tell us that you wish this to happen.
-          </li>
-          <li>
-            You may request details of personal information which we hold about
-            you. If you would like a copy of the information held on you, please
-            write to [Your Company Name, Address, City, State, Zip Code] or
-            email [email protected]
-          </li>
-          <li>
-            If you believe that any information we are holding on you is
-            incorrect or incomplete, please write to or email us as soon as
-            possible at the above address. We will promptly correct any
-            information found to be incorrect.
-          </li>
-        </ul>
+        <h2 class="text-2xl font-bold mb-2 text-p3">Limitação de Responsabilidade</h2>
 
         <p class="mb-4">
-          This privacy policy is subject to change without notice.
+          Nós não nos responsabilizamos por qualquer dano ou perda decorrente do
+          uso do nosso site, exceto nos casos em que tal responsabilidade é
+          expressamente prevista por lei.
         </p>
+
+        <h2 class="text-2xl font-bold mb-2 text-p3">Resolução de Disputas</h2>
+
+        <p class="mb-4">
+          Qualquer disputa decorrente do uso deste site será resolvida de acordo
+          com as leis da jurisdição em que o site está localizado.
+        </p>
+
+        <h2 class="text-2xl font-bold mb-2 text-p3">Condições Gerais</h2>
+
+        <p class="mb-4">
+          Estes termos de uso constituem um contrato vinculante entre você e a
+          Ponto Zero Soluções. Se você não concorda com esses termos, não
+          utilize o site.
+        </p>
+       
       </div>
     </div>
   );

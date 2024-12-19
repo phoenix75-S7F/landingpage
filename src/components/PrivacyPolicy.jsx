@@ -1,6 +1,7 @@
 import * as ReactDOM from "react-dom/client";
 import { Element, Link as LinkScroll } from "react-scroll";
 import { politica } from "../constants";
+import TextPolicy from "./TextPolicy";
 import { StrictMode } from "react";
 import App from "../App";
 import "../index.css";
@@ -41,12 +42,13 @@ const PrivacyPolicy = () => {
                   <h2 className="max-w-512 mb-7 h3 text-p3 text-center justify-between max-md:mb-6 max-md:h5">
                     {title}
                   </h2>
-                  <p className="caption mb-5 max-md:mb-6">{caption}</p>
+                  {/* <p className="caption mb-5 max-md:mb-6">{caption}</p> */}
                 </div>
                 <div className=" mb-12 flex items-center justify-center flex-col">
                   {/* <p className="max-w-screen-sm justify-items-center mb-11 body-1 max-md:mb-8 max-md:body-3"> */}
                   <p className="flex -mt-12 2xl:text-[22px] xl:text-[22px] lg:text-[22px] md:text-[22px] text-purple-200 text-center xs:text-[9px]">
-                    {text}
+                    {/* {text} */}
+                    <TextPolicy />
                   </p>
                 </div>
                 <Button icon={button.icon} onClick={homePage}>
