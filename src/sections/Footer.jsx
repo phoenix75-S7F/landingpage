@@ -1,11 +1,24 @@
 import * as ReactDOM from 'react-dom/client'
 import { socials } from "../constants/index.jsx";
 import About from "../components/About.jsx";
+import Terms from '../components/Terms.jsx';
+import PrivacyPolicy from '../components/PrivacyPolicy.jsx';
 
 function handleAbout() {
-
   const root = ReactDOM.createRoot(document.getElementById("root"));
   const element = <About />; 
+  root.render(element);
+}
+
+function handleTerms() {
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  const element = <Terms />; 
+  root.render(element);
+}
+
+function handlePolicy() {
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  const element = <PrivacyPolicy />; 
   root.render(element);
 }
 
@@ -15,10 +28,10 @@ const Footer = () => {
       <div className="container">
         <div className="flex w-full max-md:flex-col">
           <div className="flex items-center justify-center sm:ml-auto ">
-            <p className="legal-after relative mr-10 text-p5 transition-all duration-1000 hover:text-p1">
+            <p onClick={handlePolicy} className="legal-after relative mr-10 text-p5 transition-all duration-1000 hover:text-p1 cursor-pointer">
               Politica de Privacidade
             </p>
-            <p className="legal-after relative mr-10 text-p5 transition-all duration-500 hover:text-p1">
+            <p onClick={handleTerms} className="legal-after relative mr-10 text-p5 transition-all duration-500 hover:text-p1 cursor-pointer">
               Termos de Uso
             </p>
 

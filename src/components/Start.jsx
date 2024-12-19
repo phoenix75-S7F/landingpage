@@ -19,7 +19,6 @@ import {
 import { Input } from "@/components/ui/input";
 import CustomInput from "./CustomInput";
 import Button from "./Button";
-import { preços } from "../constants";
 
 const formSchema = z.object({
   username: z.string().min(2, {
