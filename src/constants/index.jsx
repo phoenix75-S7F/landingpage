@@ -40,6 +40,36 @@ export const funcionalidades = [
     },    
   ];
 
+  export const politica = [
+    {
+      id: '0',
+      icon: '/images/faq-logo.png',
+      caption: 'Politica de Privacidade',
+      title: 'Ponto Zero Soluções',
+      text: "Nossa empresa kldlkjfldsfjldfmn,cmnv,xc mx,cvnoioiuoiasd aisduaosiduaos asiduaosduoppasidausdasgdhkgkhahsdgkasdgkhgh",
+      button: {
+        icon: '/images/magictouch.svg',
+        title: 'Fechar',
+        url: '/',
+      },
+    },    
+  ];
+
+  export const termos = [
+    {
+      id: '0',
+      icon: '/images/faq-logo.png',
+      caption: 'Termos de Uso',
+      title: 'Ponto Zero Soluções',
+      text: "Nossa empresa kldlkjfldsfjldfmn,cmnv,xc mx,cvnoioiuoiasd aisduaosiduaos asiduaosduoppasidausdasgdhkgkhahsdgkasdgkhgh",
+      button: {
+        icon: '/images/magictouch.svg',
+        title: 'Fechar',
+        url: '/',
+      },
+    },    
+  ];
+
   export const detailsAbout = [
     {
       id: '0',
@@ -496,5 +526,23 @@ export const funcionalidades = [
       imgURL: "/icons/home.svg",
       url: "/about",
       title: "Sobre a Empresa",
+    },  
+  ];
+
+  export const policy = [
+    {
+      id: '0',
+      imgURL: "/icons/home.svg",
+      url: "/policy",
+      title: "Politica de Privacidade",
+    },  
+  ];
+
+  export const terms = [
+    {
+      id: '0',
+      imgURL: "/icons/home.svg",
+      url: "/terms",
+      title: "Termos de Uso",
     },  
   ];
