@@ -1,43 +1,87 @@
-// import { Link } from "react-router-dom";
-// import Image from "next/image";
-import { useNavigate } from "react-router-dom";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
+import { useState } from "react";
 import clsx from "clsx";
-
-// import { Button } from "@/components/ui/button";
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import CustomInput from "./CustomInput";
 import Button from "./Button";
+import emailjs from "@emailjs/browser";
+import ToastAnimated, { showToast } from "../ui-lib/toast";
 
-const formSchema = z.object({
-  username: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
-  }),
-});
+// const formSchema = z.object({
+//   username: z.string().min(2, {
+//     message: "Username must be at least 2 characters.",
+//   }),
+// });
 
 const handleLoggOut = () => {
   window.location = "/";
 };
 
 const Start = (plan) => {
-  const form = useForm();
+  const [firstname, setFirstName] = useState("");
+  const [lastname, setLastName] = useState("");
+  const [address, setAddress] = useState("");
+  const [city, setCity] = useState("");
+  const [state, setState] = useState("");
+  const [postalcode, setPostalCode] = useState("");
+  const [email, setEmail] = useState("");
+  const [company, setCompany] = useState("");
+  const [fone, setFone] = useState("");
 
-  console.log(plan)
   const planos = {
+    id: plan.plan.type.id,
     title: plan.plan.type.title,
     price: plan.plan.type.priceMonthly,
   };
+
+  function sendEmail(e) {
+    console.log(e);
+    e.preventDefault();
+
+    if (
+      firstname === "" ||
+      lastname === "" ||
+      address === "" ||
+      city === "" ||
+      state === "" ||
+      postalcode === "" ||
+      company === "" ||
+      email === "" ||
+      fone === ""
+    ) {
+      showToast({ type: "warn", message: "Preencha todos os campos!" });
+      return;
+    }
+
+    const templateParams = {
+      from_name: name,
+      email: email,
+      message: message,
+      fone: fone,
+    };
+
+    emailjs
+      .send(
+        "service_z062miu",
+        "template_bzpor6f",
+        templateParams,
+        "R8Xiy43s_H_5neZ98",
+      )
+      .then(
+        (response) => {
+          // console.log("Email recebido com sucesso!", response.status, response.text)
+          showToast({ type: "success", message: "E-mail enviado com sucesso" });
+          setFirstName("");
+          setLastName("");
+          setAddress("");
+          setCity("");
+          setState("");
+          setPostalCode("");
+          setCompany("");
+          setEmail("");
+        },
+        (err) => {
+          showToast({ type: "error", message: "Ocorreu um erro!" });
+        },
+      );
+  }
 
   return (
     <section className="auth-form-1">
@@ -59,130 +103,183 @@ const Start = (plan) => {
       </div>
 
       <>
-        <Form {...form}>
-          <form className="space-y-6">
-            {/* {type === "sign-up" && ( */}
-            <>
-              <div className="flex gap-4">
-                <CustomInput
-                  control={form.control}
-                  name="firstName"
-                  label="Nome"
-                  placeholder="Nome"
-                />
-
-                <CustomInput
-                  control={form.control}
-                  name="lastName"
-                  label="Sobrenome"
-                  placeholder="Sobrenome"
-                />
+        <form className="space-y-6" onSubmit={sendEmail}>
+          <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+            <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+              <div>
+                <label htmlFor="first-name" className="form-label">
+                  Nome
+                </label>
+                <div className="mt-1">
+                  <input
+                    type="text"
+                    id="first-name"
+                    className="input-class"
+                    name="firstName"
+                    onChange={(e) => setFirstName(e.target.value)}
+                    value={firstname}
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="last-name" className="form-label">
+                  Sobrenome
+                </label>
+                <div className="mt-1">
+                  <input
+                    type="text"
+                    id="last-name"
+                    className="input-class"
+                    name="lastName"
+                    onChange={(e) => setLastName(e.target.value)}
+                    value={lastname}
+                  />
+                </div>
               </div>
 
-              <CustomInput
-                control={form.control}
-                name="address1"
-                label="Endereço"
-                placeholder="Entre com seu endereço"
-              />
+              <div>
+                <label htmlFor="endereço" className="form-label">
+                  Endereço
+                </label>
 
-              <CustomInput
-                control={form.control}
-                name="city"
-                label="Municipio"
-                placeholder="Entre com seu municipio"
-              />
-
-              <div className="flex gap-4">
-                <CustomInput
-                  control={form.control}
-                  name="state"
-                  label="UF"
-                  placeholder="Ex: SP"
-                />
-
-                <CustomInput
-                  control={form.control}
-                  name="postalCode"
-                  label="CEP"
-                  placeholder="Entre com CEP"
-                />
-              </div>
-              {/* <div className="flex gap-4"> */}
-              <CustomInput
-                control={form.control}
-                name="company"
-                label="Empresa"
-                placeholder="Ponto Zero Soluções"
-              />
-
-              {/* <CustomInput
-                  control={form.control}
-                  name="ssn"
-                  label="SSN"
-                  placeholder="Ex: 1234"
-                /> */}
-              {/* </div> */}
-              {/* {preços.map((plan, index) => ( */}
-              <div className="mt-8 text-center">
-                <h1 className="text-p3 font-bold">Sua escolha foi o plano:</h1>
+                <div className="mt-1">
+                  <input
+                    type="text"
+                    id="endereço"
+                    className="input-class"
+                    name="endereço"
+                    onChange={(e) => setAddress(e.target.value)}
+                    value={address}
+                  />
+                </div>
               </div>
 
-              <div
-                className={clsx(
-                  "small-2 rounded-20 relative z-2 mb-6 border-2 font-bold px-4 py-1.5 uppercase",
-                  1 === 2 ? "border-p3 text-p3 text-center" : "border-p1 text-p1 text-center",
-                )}>
-                {planos.title} - R$ {planos.price},00 Mês/Ano
+              <div>
+                <label htmlFor="municipio" className="form-label">
+                  Municipio
+                </label>
+                <div className="mt-1">
+                  <input
+                    type="text"
+                    id="municipio"
+                    className="input-class"
+                    name="municipio"
+                    onChange={(e) => setCity(e.target.value)}
+                    value={city}
+                  />
+                </div>
               </div>
 
-              {/* ))} */}
-            </>
+              <div>
+                <label htmlFor="state" className="form-label">
+                  UF
+                </label>
+                <div className="mt-1">
+                  <input
+                    type="text"
+                    id="state"
+                    className="input-class"
+                    name="state"
+                    onChange={(e) => setState(e.target.value)}
+                    value={state}
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="cep" className="form-label">
+                  CEP
+                </label>
+                <div className="mt-1">
+                  <input
+                    type="text"
+                    id="cep"
+                    className="input-class"
+                    name="cep"
+                    onChange={(e) => setPostalCode(e.target.value)}
+                    value={postalcode}
+                  />
+                </div>
+              </div>
 
-            {/* <CustomInput
-              control={form.control}
-              name="email"
-              label="E-mail"
-              placeholder="Entre com seu email"
-            />
+              <div>
+                <label htmlFor="empresa" className="form-label">
+                  Empresa
+                </label>
+                <div className="mt-1">
+                  <input
+                    type="text"
+                    id="empresa"
+                    className="input-class"
+                    name="empresa"
+                    onChange={(e) => setCompany(e.target.value)}
+                    value={company}
+                  />
+                </div>
+              </div>
 
-            <CustomInput
-              control={form.control}
-              name="password"
-              label="Senha"
-              placeholder="Entre com sua senha"
-            /> */}
-            {/* <div className="flex flex-col gap-4">
-              <Button type="submit" disabled={isLoading} className="form-btn">
-                {isLoading ? (
-                  <>
-                    <Loader2 size={20} className="animate-spin" /> &nbsp;
-                    Loading...
-                  </>
-                ) : type === "sign-in" ? (
-                  "Entrar"
-                ) : (
-                  "Cadastrar"
-                )}
-              </Button>
-            </div> */}
-          </form>
-        </Form>
+              <div>
+                <label htmlFor="email" className="form-label">
+                  E-mail
+                </label>
+                <div className="mt-1">
+                  <input
+                    type="text"
+                    id="email"
+                    className="input-class"
+                    name="email"
+                    onChange={(e) => setEmail(e.target.value)}
+                    value={email}
+                  />
+                </div>
+              </div>
 
-        <Button className="mt-2" href="/">
-          Enviar
-        </Button>
-
-        <footer className="footer">
-          <div className="footer_image" onClick={handleLoggOut}>
-            <img src="/images/logout.svg" alt="phx" />
+              {/* <div class="sm:col-span-2">
+                <label
+                  for="message"
+                  class="block text-sm font-semibold leading-6 text-gray-900">
+                  Message
+                </label>
+                <div class="mt-2.5">
+                  <textarea
+                    id="message"
+                    rows="4"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    name="message"></textarea>
+                </div>
+              </div> */}
+            </div>
           </div>
-          <p
-            className="text-16 cursor-pointer font-semibold text-center text-p3"
-            onClick={handleLoggOut}>
-            Voltar
-          </p>
-        </footer>
+
+          <div className="mt-2 text-center">
+            <h1 className="text-p3 font-bold">Sua escolha foi o plano:</h1>
+          </div>
+
+          <div
+            className={clsx(
+              "small-2 rounded-20 relative z-2 -mb-4 border-2 font-bold px-4 py-1.5 uppercase",
+              planos.id === "1"
+                ? "border-p3 text-p3 text-center font-semibold"
+                : "border-p1 text-p1 text-center font-semibold",
+            )}>
+            {planos.title} - R$ {planos.price},00 Mês
+          </div>
+
+          <ToastAnimated />
+          <Button icon="/images/zap.svg" type="submit" value="Enviar">
+            Enviar
+          </Button>
+
+          <footer className="footer">
+            <div className="footer_image" onClick={handleLoggOut}>
+              <img src="/images/logout.svg" alt="phx" />
+            </div>
+            <p
+              className="text-16 cursor-pointer font-semibold text-center text-p3"
+              onClick={handleLoggOut}>
+              Voltar
+            </p>
+          </footer>
+        </form>
       </>
     </section>
   );

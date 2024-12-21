@@ -3,7 +3,7 @@ import { FormControl, FormField, FormLabel, FormMessage } from "./ui/form";
 import { Input } from "./ui/input";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod"
+import { zodResolver } from "@hookform/resolvers/zod";
 import { authFormSchema } from "@/lib/utils";
 
 // import { Control, FieldPath, useForm } from "react-hook-form";
@@ -20,16 +20,26 @@ import { authFormSchema } from "@/lib/utils";
 const formSchema = authFormSchema("sign-up");
 
 // 1. Define your form.
-const form = useForm<z.infer<typeof formSchema>>({
-  resolver: zodResolver(formSchema),
-  defaultValues: {
-    email: "",
-    password: ''
-  },
-});
+const form =
+  useForm <
+  z.infer <
+  typeof formSchema >>
+    {
+      resolver: zodResolver(formSchema),
+      defaultValues: {
+        firstName: "",        
+        lastName: "",        
+        address1: "",       
+        city: "",
+        state: "",        
+        postalCode: "", 
+        company: "", 
+        email: "",
+        password: "",
+      },
+    };
 
-const CustomInput = ({ control, name, label, placeholder }) => {  
-
+const CustomInput = ({ name, label, placeholder }) => {
   return (
     <FormField
       control={form.control}

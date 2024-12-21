@@ -15,6 +15,7 @@ const FormContact = () => {
     const [message, setMessage] = useState('')
 
     function sendEmail(e) {
+      console.log(e)
       e.preventDefault()
 
       if(name === '' || email === '' || fone === '' || message === ''){
