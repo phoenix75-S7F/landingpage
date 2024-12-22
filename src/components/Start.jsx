@@ -16,15 +16,15 @@ const handleLoggOut = () => {
 
 const Start = (plan) => {
   const [firstname, setFirstName] = useState("");
-  const [lastname, setLastName] = useState("");
+  // const [lastname, setLastName] = useState("");
+  const [fone, setFone] = useState("");
   const [address, setAddress] = useState("");
   const [city, setCity] = useState("");
   const [state, setState] = useState("");
   const [postalcode, setPostalCode] = useState("");
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState("");
-  const [fone, setFone] = useState("");
-
+  
   const planos = {
     id: plan.plan.type.id,
     title: plan.plan.type.title,
@@ -36,22 +36,22 @@ const Start = (plan) => {
     e.preventDefault();
 
     if (
-      firstname === "" ||
-      lastname === "" ||
+      firstname === "" ||   
+      fone === "" ||  
       address === "" ||
       city === "" ||
       state === "" ||
       postalcode === "" ||
       company === "" ||
-      email === "" ||
-      fone === ""
+      email === "" 
+     
     ) {
       showToast({ type: "warn", message: "Preencha todos os campos!" });
       return;
     }
 
     const templateParams = {
-      from_name: name,
+      from_name: firstname,
       email: email,
       message: message,
       fone: fone,
@@ -69,7 +69,7 @@ const Start = (plan) => {
           // console.log("Email recebido com sucesso!", response.status, response.text)
           showToast({ type: "success", message: "E-mail enviado com sucesso" });
           setFirstName("");
-          setLastName("");
+          setFone("");
           setAddress("");
           setCity("");
           setState("");
@@ -123,16 +123,16 @@ const Start = (plan) => {
               </div>
               <div>
                 <label htmlFor="last-name" className="form-label">
-                  Sobrenome
+                  Fone
                 </label>
                 <div className="mt-1">
                   <input
                     type="text"
-                    id="last-name"
+                    id="fone"
                     className="input-class"
-                    name="lastName"
-                    onChange={(e) => setLastName(e.target.value)}
-                    value={lastname}
+                    name="fone"
+                    onChange={(e) => setFone(e.target.value)}
+                    value={fone}
                   />
                 </div>
               </div>
