@@ -14,7 +14,7 @@ const Contact = () => {
                    Contato
                </h3>
                <p className="body-1 text-center text-p4 -mt-9">
-                  Tire suas dúvidas ou envie uma sugestão.
+                  Tire suas dúvidas ou envie uma sugestão. Teste teste
                </p>      
 
               <div className="h-640 relative flex justify-around flex-grow px-[5%] border-2 border-s3 rounded-7xl max-w-80:hidden">
