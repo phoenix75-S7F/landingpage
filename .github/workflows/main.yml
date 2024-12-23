@@ -14,16 +14,7 @@ jobs:
           user: ${{ secrets.USER }}
           password: ${{ secrets.PASS }}
           localDir:
-            description: "Local directory"
-            required: false
-            default: "."
-          options:
-            description: "Additional mirror command options"
-            required: false
-            default: ""
-          runs:
-            using: "docker"
-            image: "Dockerfile"
-          branding:
-            color: "red"
-            icon: "upload-cloud"
+             description: "Local directory"
+             required: false
+             default: "."
+             
