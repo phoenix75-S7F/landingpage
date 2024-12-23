@@ -13,6 +13,6 @@ jobs:
         host: ${{ secrets.HOST }} 
         user: ${{ secrets.USER }}
         password: ${{ secrets.PASS }}
-      runs-on: npm run build 
+        server-dir: public_html/pontozero 
         
         
