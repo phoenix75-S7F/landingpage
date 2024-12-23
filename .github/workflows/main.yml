@@ -5,14 +5,25 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: FTP Deploy Locaweb
-      uses: locaweb/ftp-deploy@1.0.0
-      with:
-        host: ${{ secrets.HOST }} 
-        user: ${{ secrets.USER }}
-        password: ${{ secrets.PASS }}
-        localDir: "dist"
-
-        
+      - name: FTP Deploy Locaweb
+        uses: locaweb/ftp-deploy@1.0.0
+        with:
+          host: ${{ secrets.HOST }}
+          user: ${{ secrets.USER }}
+          password: ${{ secrets.PASS }}
+          localDir:
+            description: "Local directory"
+            required: false
+            default: "."
+          options:
+            description: "Additional mirror command options"
+            required: false
+            default: ""
+          runs:
+            using: "docker"
+            image: "Dockerfile"
+          branding:
+            color: "red"
+            icon: "upload-cloud"
