@@ -13,6 +13,6 @@ jobs:
         host: ${{ secrets.HOST }} 
         user: ${{ secrets.USER }}
         password: ${{ secrets.PASS }}
-        localDir: "/home/sergio/Documentos/PONTOZERO/pontozero/dist/"
-        remoteDir: "/pontozero"
+        localDir: "/pontozero/dist"
+        
         
