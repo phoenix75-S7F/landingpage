@@ -15,6 +15,7 @@ jobs:
       
     - name: 🔨 Build Project
       run: |       
+        nvm install node v18.17.1
         npm install
         npm run build
     
