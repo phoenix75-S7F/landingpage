@@ -14,7 +14,8 @@ jobs:
         node-version: '23'
       
     - name: 🔨 Build Project
-      run: |                       
+      run: |               
+        npm install --legacy-peer-deps
         npm run build
     
     - name: FTP Deploy Locaweb
@@ -23,3 +24,6 @@ jobs:
         host: ${{ secrets.HOST }} 
         user: ${{ secrets.USER }}
         password: ${{ secrets.PASS }}
+        exclude: |        
+          **/node_modules/**
+          fileToExclude.txt
