@@ -24,6 +24,7 @@ jobs:
         host: ${{ secrets.HOST }} 
         user: ${{ secrets.USER }}
         password: ${{ secrets.PASS }}
+        localDir: "dist"
         exclude: |        
           **/node_modules/**
           fileToExclude.txt
