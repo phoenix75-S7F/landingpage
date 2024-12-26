@@ -30,7 +30,8 @@ const FormContact = () => {
         fone: fone
       }
 
-      emailjs.send("service_z062miu", "template_bzpor6f", templateParams, "R8Xiy43s_H_5neZ98")
+      emailjs.send("service_7bvq7dh", "template_vzgb7vo", templateParams, "BxIzwYwqoiuEbBRSB")
+                                                                           
       .then((response) => {
           // console.log("Email recebido com sucesso!", response.status, response.text)
           showToast({ type: "success", message: "E-mail enviado com sucesso" });
