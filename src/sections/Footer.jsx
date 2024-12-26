@@ -53,11 +53,10 @@ const Footer = () => {
                   <img
                     src={icon}
                     alt={title}
-                    className="size-8 object-contain -ml-80"
+                    className="size-8 object-contain -ml-80 xs:-ml-32"
                   />
-                   <p className="text-p5 transition-all duration-500 hover:text-p1 py-1 ml-2">{title}</p>
-                </a>
-               
+                   <p className="text-p5 transition-all duration-500 hover:text-p1 py-1 ml-2 xs:-ml-0">{title}</p>
+                </a>               
               </li>
             ))}
           </ul>
