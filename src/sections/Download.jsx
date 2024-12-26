@@ -11,7 +11,7 @@ const Download = () => {
 						<div className="relative mr-6 flex-540 max-xl:flex-280 max-lg:flex-256 max-md:flex-100">
 							<div className="mb-10">
 								<img
-									src="/images/pzero.png"
+									src="/images/pzero.png"									
 									width={360}
 									height={220}
 									alt="pzero"
