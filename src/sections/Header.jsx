@@ -39,7 +39,7 @@ const Header = () => {
     )}>
         <div className="container flex h-14 items-center max-lg:px-5">
             <a className="lg:hidden flex-1 cursor-pointer rounded-14 z-2">
-                <img src="/images/pzero.png" width={145} heigth={95} alt="logo" className="rounded-md"/>
+                <img src="/images/pzeronew.png" width={145} heigth={95} alt="logo" className="rounded-md"/>
             </a>
 
             <div className={clsx(
@@ -64,7 +64,7 @@ const Header = () => {
                                  smooth
                                  className={clsx("max-lg:hidden transition-transform duration-500 cursor-pointer")}
                               >
-                                <img src="/images/pzero.png" width={220} heigth={105} alt="logo" className="rounded-md"/>
+                                <img src="/images/pzeronew.png" width={220} heigth={105} alt="logo" className="rounded-md"/>
                               </LinkScroll>
                           </li>
 
