@@ -28,7 +28,7 @@ export const funcionalidades = [
   export const sobre = [
     {
       id: '0',
-      icon: '/images/faq-logo.png',
+      icon: '/images/icon_pzero.jpeg',
       caption: 'Fácil integração',
       title: 'Ponto Zero Soluções',
       text: "Nossa empresa kldlkjfldsfjldfmn,cmnv,xc mx,cvnoioiuoiasd aisduaosiduaos asiduaosduoppasidausdasgdhkgkhahsdgkasdgkhgh",
@@ -43,7 +43,7 @@ export const funcionalidades = [
   export const politica = [
     {
       id: '0',
-      icon: '/images/faq-logo.png',
+      icon: '/images/icon_pzero.jpeg',
       caption: 'Politica de Privacidade',
       title: 'Ponto Zero Soluções',
       text: "Nossa empresa kldlkjfldsfjldfmn,cmnv,xc mx,cvnoioiuoiasd aisduaosiduaos asiduaosduoppasidausdasgdhkgkhahsdgkasdgkhgh",
@@ -58,7 +58,7 @@ export const funcionalidades = [
   export const termos = [
     {
       id: '0',
-      icon: '/images/faq-logo.png',
+      icon: '/images/icon_pzero.jpeg',
       caption: 'Termos de Uso',
       title: 'Ponto Zero Soluções',
       text: "Nossa empresa kldlkjfldsfjldfmn,cmnv,xc mx,cvnoioiuoiasd aisduaosiduaos asiduaosduoppasidausdasgdhkgkhahsdgkasdgkhgh",
@@ -128,7 +128,7 @@ export const funcionalidades = [
     },
     {
       id: '1',
-      icon: '/images/faq-logo.png',
+      icon: '/images/icon_pzerodark.jpeg',
       title: 'Ponto Zero',
     },
     {
@@ -493,32 +493,42 @@ export const funcionalidades = [
     },
   ];
   
+  // export const socials = [
+  //   {
+  //     id: '0',
+  //     title: 'x',
+  //     icon: '/images/socials/x.svg',
+  //     url: '#',
+  //   },
+  //   {
+  //     id: '1',
+  //     title: 'Threads',
+  //     icon: '/images/socials/threads.svg',
+  //     url: '#',
+  //   },
+  //   {
+  //     id: '2',
+  //     title: 'Instagram',
+  //     icon: '/images/socials/instagram.svg',
+  //     url: '#',
+  //   },
+  //   {
+  //     id: '3',
+  //     title: 'Discord',
+  //     icon: '/images/socials/discord.svg',
+  //     url: '#',
+  //   },
+  // ];
+
   export const socials = [
     {
       id: '0',
-      title: 'x',
-      icon: '/images/socials/x.svg',
+      title: 'contato@pontozerosolucoes.com.br',
+      icon: '/images/socials/email.svg',
       url: '#',
-    },
-    {
-      id: '1',
-      title: 'Threads',
-      icon: '/images/socials/threads.svg',
-      url: '#',
-    },
-    {
-      id: '2',
-      title: 'Instagram',
-      icon: '/images/socials/instagram.svg',
-      url: '#',
-    },
-    {
-      id: '3',
-      title: 'Discord',
-      icon: '/images/socials/discord.svg',
-      url: '#',
-    },
+    }
   ];
+
 
   export const otherPages = [
     {

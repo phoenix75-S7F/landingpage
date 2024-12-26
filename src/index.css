@@ -400,6 +400,10 @@
   }
 
   .social-icon {
+    @apply flex size-11 border-s4/25 bg-s1/5 transition-all duration-500 hover:border-s4;
+  }
+
+  .social-icon1 {
     @apply flex size-10 items-center justify-center rounded-full border-2 border-s4/25 bg-s1/5 transition-all duration-500 hover:border-s4;
   }
   /*  END of Footer*/
