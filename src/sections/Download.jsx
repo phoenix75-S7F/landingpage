@@ -15,6 +15,7 @@ const Download = () => {
 									width={360}
 									height={220}
 									alt="pzero"
+									className="rounded-md"
 								/>
 							</div>
 							<p className="body-1 mb-10 max-w-md">

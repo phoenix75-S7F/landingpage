@@ -38,8 +38,8 @@ const Header = () => {
       hasScrolled && "py-2 bg-black-100 backdrop-blur-[8px]",
     )}>
         <div className="container flex h-14 items-center max-lg:px-5">
-            <a className="lg:hidden flex-1 cursor-pointer z-2">
-                <img src="/images/pzero.png" width={115} heigth={55} alt="logo" />
+            <a className="lg:hidden flex-1 cursor-pointer rounded-14 z-2">
+                <img src="/images/pzero.png" width={145} heigth={95} alt="logo" className="rounded-md"/>
             </a>
 
             <div className={clsx(
@@ -64,7 +64,7 @@ const Header = () => {
                                  smooth
                                  className={clsx("max-lg:hidden transition-transform duration-500 cursor-pointer")}
                               >
-                                <img src="/images/pzero.png" width={160} heigth={55} alt="logo" />
+                                <img src="/images/pzero.png" width={220} heigth={105} alt="logo" className="rounded-md"/>
                               </LinkScroll>
                           </li>
 
