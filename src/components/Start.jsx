@@ -3,6 +3,7 @@ import clsx from "clsx";
 import Button from "./Button";
 import emailjs from "@emailjs/browser";
 import ToastAnimated, { showToast } from "../ui-lib/toast";
+import { formatAmount } from "../lib/utils";
 
 // const formSchema = z.object({
 //   username: z.string().min(2, {
@@ -15,8 +16,7 @@ const handleLoggOut = () => {
 };
 
 const Start = (plan) => {
-  const [firstname, setFirstName] = useState("");
-  // const [lastname, setLastName] = useState("");
+  const [firstname, setFirstName] = useState(""); 
   const [fone, setFone] = useState("");
   const [address, setAddress] = useState("");
   const [city, setCity] = useState("");
@@ -50,19 +50,26 @@ const Start = (plan) => {
       return;
     }
 
+    const mensagem = "Este é o plano escolhido: " + planos.title +" "+ formatAmount(planos.price)+" por mês"
+
     const templateParams = {
       from_name: firstname,
-      email: email,
-      message: message,
       fone: fone,
-    };
+      address: address,
+      city: city,
+      state: state,
+      postalcode: postalcode,
+      company: company,
+      email: email,
+      message: mensagem      
+    };    
 
     emailjs
       .send(
-        "service_z062miu",
-        "template_bzpor6f",
+        "service_986mn6s",
+        "template_k1873mj",
         templateParams,
-        "R8Xiy43s_H_5neZ98",
+        "BxIzwYwqoiuEbBRSB",
       )
       .then(
         (response) => {
