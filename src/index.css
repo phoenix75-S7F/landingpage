@@ -301,12 +301,16 @@
     @apply first:rounded-bl-3xl first:rounded-tl-3xl lg:first:border-r-0;
   }
 
+  .pricing-plan_middle {
+    @apply last:rounded-br-3xl last:rounded-tr-3xl lg:last:border-l-0;
+  }
+
   .pricing-plan_last {
     @apply last:rounded-br-3xl last:rounded-tr-3xl lg:last:border-l-0;
   }
 
   .pricing-plan_odd {
-    @apply odd:border-s3 odd:bg-s1 lg:odd:mt-12;
+    @apply odd:border-s3 odd:bg-s1 lg:odd:mt-6 odd:rounded-bl-3xl odd:rounded-br-3xl;
   }
 
   .pricing-plan_even {

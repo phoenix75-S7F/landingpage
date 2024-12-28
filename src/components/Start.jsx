@@ -16,7 +16,7 @@ const handleLoggOut = () => {
 };
 
 const Start = (plan) => {
-  const [firstname, setFirstName] = useState(""); 
+  const [firstname, setFirstName] = useState("");
   const [fone, setFone] = useState("");
   const [address, setAddress] = useState("");
   const [city, setCity] = useState("");
@@ -24,33 +24,32 @@ const Start = (plan) => {
   const [postalcode, setPostalCode] = useState("");
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState("");
-  
+
   const planos = {
     id: plan.plan.type.id,
     title: plan.plan.type.title,
     price: plan.plan.type.priceMonthly,
-  };
-
+  };  
+ 
   function sendEmail(e) {
     console.log(e);
     e.preventDefault();
 
     if (
-      firstname === "" ||   
-      fone === "" ||  
+      firstname === "" ||
+      fone === "" ||
       address === "" ||
       city === "" ||
       state === "" ||
       postalcode === "" ||
       company === "" ||
-      email === "" 
-     
+      email === ""
     ) {
       showToast({ type: "warn", message: "Preencha todos os campos!" });
       return;
     }
 
-    const mensagem = "Este é o plano escolhido: " + planos.title +" "+ formatAmount(planos.price)+" por mês"
+    // const mensagem = "Este é o plano escolhido -> " + planos.title       
 
     const templateParams = {
       from_name: firstname,
@@ -61,8 +60,8 @@ const Start = (plan) => {
       postalcode: postalcode,
       company: company,
       email: email,
-      message: mensagem      
-    };    
+      message: planos.title,
+    };
 
     emailjs
       .send(
@@ -95,9 +94,9 @@ const Start = (plan) => {
       <header className="flex flex-col gap-5 md:gap-8">
         <div className="cursor-pointer flex items-center gap-1 -mt-10">
           <img
-            src="/images/pzero.png"
-            width={260}
-            height={280}
+            src="/images/pzeronew.png"
+            width={320}
+            height={340}
             alt="pzero"
             className="relative p-8"
           />
@@ -261,15 +260,17 @@ const Start = (plan) => {
             <h1 className="text-p3 font-bold">Sua escolha foi o plano:</h1>
           </div>
 
-          <div
-            className={clsx(
-              "small-2 rounded-20 relative z-2 -mb-4 border-2 font-bold px-4 py-1.5 uppercase",
-              planos.id === "1"
-                ? "border-p3 text-p3 text-center font-semibold"
-                : "border-p1 text-p1 text-center font-semibold",
-            )}>
-            {planos.title} - R$ {planos.price},00 Mês
+          
+          <div className="small-2 rounded-20 relative z-2 -mb-4 border-2 px-4 py-1.5 uppercase border-p1 text-p1 text-center font-semibold">
+              {planos.title} 
           </div>
+          
+
+          {/* {planos.id !== 3 && (
+            <div className="small-2 rounded-20 relative z-2 -mb-4 border-2 px-4 py-1.5 uppercase border-p1 text-p1 text-center font-semibold">
+              {planos.title} - R$ {planos.price},00 Mês
+            </div>
+          )} */}
 
           <ToastAnimated />
           <Button icon="/images/zap.svg" type="submit" value="Enviar">
