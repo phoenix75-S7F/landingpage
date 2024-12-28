@@ -133,7 +133,7 @@ const Pricing = () => {
                   {plan.caption}
                 </div>
 
-                <ul className="-mx-10 space-y-4 xl:px-7">
+                <ul className="-mx-10 space-y-4 xs:px-7 ls:px-7 ml:px-7 sm:px-7 xl:px-7">
                   {plan.features.map((feature) => (
                     <li
                       key={feature}
