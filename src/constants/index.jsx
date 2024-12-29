@@ -262,7 +262,7 @@ export const preços = [
     features: [
       "Funcionalidades dos planos PDV Básico, ERP Intermediário ou ERP Avançado, conforme escolha do cliente",
       "Loja Virtual",
-      "Integração com Marketplaces: Mercado Livre, Shopee, Casa Bahia, Correios, NuvemShop, Shopify, Amazon, Americanas, Amazon.",      
+      "Integração com Marketplaces: Mercado Livre, Shopee, Casas Bahia, Correios, NuvemShop, Shopify, Amazon, Americanas, Amazon.",      
       "Suporte Técnico",
     ],
     icon: "/images/hexagon.svg",
