@@ -94,7 +94,9 @@ const FormContact = () => {
               </label>
               <div className="mb-4">
                 <input
-                  
+                  id="fone"
+                  name="fone"
+                  type="fone"
                   placeholder="(00) 00000-0000"
                   autoComplete="fone"
                   className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6"
@@ -103,10 +105,7 @@ const FormContact = () => {
                 />
               </div>
             </div>
-
-             {/* <div className="2xl:ml-80 xs:ml-32 -mr-512 xs:-mr-512 -mt-60"></div> */}
-             {/* <div className="2xl:ml-80 xs:ml-80 -mr-512 xs:-mr-512 -mt-60"></div> */}
-         
+                     
             <div className="2xl:ml-80 sm:ml-36 md:ml-56 ml:ml-36 lg:ml-48 xl:ml-52 xs:ml-24 ls:ml-24 -mt-60">
               <label htmlFor="message" className="text-sm/6 font-semibold text-p3">
                 Messagem
