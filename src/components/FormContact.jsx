@@ -116,7 +116,7 @@ const FormContact = () => {
                   name="message"
                   placeholder="Seu texto"
                   rows={8}                  
-                  className="2xl:w-440 sm:w-330 md:w-96 lg:w-512 xl:w-640 ls:w-72 xs:w-56 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6"                 
+                  className="2xl:w-440 sm:w-330 md:w-96 lg:w-512 xl:w-640 ls:w-72 xs:w-48 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6"                 
                   onChange={(e) => setMessage(e.target.value)}
                   value={message}
                 />
