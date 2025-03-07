@@ -123,13 +123,13 @@ export const details = [
 export const contacts = [
   {
     id: "0",
-    icon: "/images/marcador.png",
-    title: "Rua X, Centro, Mogi das Cruzes - SP",
+    icon: "/images/zap.png",
+    title: "(11) 91596-4260",
   },
   {
     id: "1",
     icon: "/images/icon_pzerodark.jpeg",
-    title: "Ponto Zero",
+    title: "Ponto Zero Soluções",
   },
   {
     id: "2",

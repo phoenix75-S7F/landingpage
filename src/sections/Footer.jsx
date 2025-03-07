@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-1 flex-wrap items-center justify-center gap-5 py-8">
           <p className="opacity-85 text-p3 font-semibold">
-            Ponto Zero © 2024 Todos os Direitos Reservados.
+            Ponto Zero © 2025 Todos os Direitos Reservados.
           </p>
         </div>
       </div>

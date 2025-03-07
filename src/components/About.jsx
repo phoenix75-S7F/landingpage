@@ -56,7 +56,7 @@ const About = () => {
               </div>
             ))}
 
-            <ul className="relative flex justify-around flex-grow px-[5%] border-2 border-s3 rounded-7xl max-md:hidden">
+            {/* <ul className="relative flex justify-around flex-grow px-[5%] border-2 border-s3 rounded-7xl max-md:hidden">
               <div className="absolute bg-s3/20 top-[38%] left-0 right-0 w-full h-[1px] z-10" />
               {detailsAbout.map(({ id, icon, caption, title }) => (
                 <li key={id} className="relative pt-16 px-4 pb-14">
@@ -79,7 +79,7 @@ const About = () => {
                   </h3>
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </div>
         </div>
       </Element>

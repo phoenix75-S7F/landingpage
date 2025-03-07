@@ -95,7 +95,7 @@ const TextPolicy = () => {
         <p class="mb-4">
           Se você tiver dúvidas ou preocupações sobre esta Política de
           Privacidade, entre em contato conosco através do e-mail
-          [contato@pontozero.com].
+          [contato@pontozerosolucoes.com.br].
         </p>
 
       </div>
