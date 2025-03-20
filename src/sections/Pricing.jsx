@@ -46,6 +46,10 @@ const Pricing = () => {
               />
             </div>
 
+            <p className="base-bold mt-9 text-center text-p3 before:mx-2.5 before:content-['-'] after:mx-2.5 after:content-['-']">
+              Taxa de implantação Grátis - por tempo limitado
+            </p>
+            
             <div className="pricing-bg">
               <img
                 src="/images/bg-outlines.svg"
@@ -94,8 +98,7 @@ const Pricing = () => {
                     "relative flex flex-col items-center",
                     index === 1 ? "pt-24" : "pt-12",
                   )}>
-                  <div
-                    className="small-2 rounded-20 relative z-2 mx-auto mb-6 border-2 px-4 py-1.5 uppercase border-p1 text-p1">
+                  <div className="small-2 rounded-20 relative z-2 mx-auto mb-6 border-2 px-4 py-1.5 uppercase border-p1 text-p1">
                     {plan.title}
                   </div>
 
@@ -122,11 +125,9 @@ const Pricing = () => {
                   )}
 
                   {index === 3 && (
-                  
-                      <div className="flex text-20 font-bold text-yellow-400 px-5 py-1.5 text-center">
-                        Planos Sob Consulta                        
-                      </div>                     
-                   
+                    <div className="flex text-20 font-bold text-yellow-400 px-5 py-1.5 text-center">
+                      Planos Sob Consulta
+                    </div>
                   )}
                 </div>
                 <div className="body-3 relative z-2 mb-10 w-full border-b-s2 pb-9 text-center text-yellow-200 border-b">
@@ -154,14 +155,18 @@ const Pricing = () => {
                   </Button>
                 </div>
 
-                {/* {index === 1 && (
-                  <p className="small-compact mt-9 text-center text-p3 before:mx-2.5 before:content-['-'] after:mx-2.5 after:content-['-']">
-                    Oferta por tempo limitado
-                  </p>
-                )} */}
+                {/* {index === 1 && ( */}
+                {/* <p className="small-compact mt-9 text-center text-p3 before:mx-2.5 before:content-['-'] after:mx-2.5 after:content-['-']">
+                  Oferta por tempo limitado
+                </p> */}
+                {/* )} */}
               </div>
             ))}
           </div>
+
+          <p className="base-bold mt-9 text-center text-p3 before:mx-2.5 before:content-['-'] after:mx-2.5 after:content-['-']">
+            Taxa de implantação Grátis - por tempo limitado
+          </p>
         </div>
       </Element>
     </section>
