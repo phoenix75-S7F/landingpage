@@ -97,13 +97,13 @@ const Header = () => {
                   <NavLink title="faq" />
                   <div className="dot" />
                   <NavLink title="contato" />
-                  {/* <div className="dot" /> */}
+                  <div className="dot" />
                   {/* <NavLink title="home" /> */}
-                  {/* <h1
+                  <h1
                    onClick={handleSerpro}
                     className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
                     INTEGRAÇÃO SERPRO
-                  </h1>  */}
+                  </h1> 
                    {/* <NavLinkSERPRO title="Integração SERPRO" /> */}
                 </li>
               </ul>
