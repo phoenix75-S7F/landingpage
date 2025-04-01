@@ -11,8 +11,8 @@ import Footer from "./sections/Footer";
 import ReactGA from 'react-ga4';
 import { useEffect } from "react";
 
-// ReactGA.initialize('G-86ZW3M417E');
-ReactGA.initialize('G-3R73RWRF6Z');
+ReactGA.initialize('G-86ZW3M417E');
+// ReactGA.initialize('G-3R73RWRF6Z');
 
 const App = () => {
 
