@@ -32,7 +32,7 @@ const Start = (plan) => {
   };  
  
   function sendEmail(e) {
-    console.log(e);
+    // console.log(e);
     e.preventDefault();
 
     if (
@@ -65,10 +65,10 @@ const Start = (plan) => {
 
     emailjs
       .send(
-        "service_986mn6s",
-        "template_k1873mj",
+        "service_dd85ios",
+        "template_pxq0xib",
         templateParams,
-        "BxIzwYwqoiuEbBRSB",
+        "auxZh9CWWy98BD7--",
       )
       .then(
         (response) => {

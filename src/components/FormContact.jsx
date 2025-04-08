@@ -30,7 +30,9 @@ const FormContact = () => {
         fone: fone
       }
 
-      emailjs.send("service_7bvq7dh", "template_vzgb7vo", templateParams, "BxIzwYwqoiuEbBRSB")
+      // emailjs.send("service_7bvq7dh", "template_vzgb7vo", templateParams, "BxIzwYwqoiuEbBRSB") contato@pontozerointegra.com.br
+
+      emailjs.send("service_dd85ios", "template_mohmzac", templateParams, "auxZh9CWWy98BD7--") //contato@pontozerosolucoes.com.br
                                                                            
       .then((response) => {
           // console.log("Email recebido com sucesso!", response.status, response.text)
@@ -40,6 +42,7 @@ const FormContact = () => {
           setMessage('')
           setFone('')
       }, (err) => {
+        // console.log(err)
         showToast({ type: "error", message: "Ocorreu um erro!" });
       })
     
