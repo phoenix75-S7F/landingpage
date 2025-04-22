@@ -5,7 +5,7 @@ import Pricing from "./sections/Pricing";
 import Faq from "./sections/Faq";
 // import Testimonials from "./sections/Testimonials"
 // import Home from "./pages/Serpropage"
-import Download from "./sections/Download";
+// import Download from "./sections/Download";
 import Contact from "./sections/Contact"
 import Footer from "./sections/Footer";
 import ReactGA from 'react-ga4';
@@ -30,7 +30,7 @@ const App = () => {
 			<Faq />
 			{/* <Home /> */}
 			{/* <Testimonials /> */}
-			<Download />
+			{/* <Download /> */}
 			<Contact />			
 			<Footer />
 		</main>

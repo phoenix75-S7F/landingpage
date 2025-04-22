@@ -9,7 +9,7 @@ const Contact = () => {
       {/* <div className="container"> */}
         <Element name="contato" className="relative">
         <div className="container relative z-2 py-28"> 
-          <div className="max-w-1230 faq-line_after faq-glow_before relative mx-auto border-l border-r border-s2 bg-s1/50 pt-28 max-xl:max-w-4xl max-lg:border-none max-sm:pb-32 max-w-80::pt-16">
+          <div className="max-w-1230 faq-line_after faq-glow_before relative mx-auto border-s2 bg-s1/50 pt-28 max-xl:max-w-4xl max-lg:border-none max-sm:pb-32 max-w-80::pt-16">
                <h3 className="h3 max-lg:h4 max-sm:h5 z-3 relative mx-auto -mt-24 mb-10 max-w-lg text-center text-p4 max-md:mb-11 max-xs:max-w-80">
                    Contato
                </h3>

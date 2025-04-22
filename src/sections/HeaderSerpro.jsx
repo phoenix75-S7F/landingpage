@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import { Link as LinkScroll } from "react-scroll";
+import { Link as LinkScroll, Link } from "react-scroll";
 import * as ReactDOM from "react-dom/client";
 import clsx from "clsx";
-import Serpro from "../components/Serpro";
+import { StrictMode } from "react";
+import App from "../App";
 
-const Header = () => {
+const HeaderSerpro = ({ navItems }) => {
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -33,10 +34,14 @@ const Header = () => {
     </LinkScroll>
   );
 
-  function handleSerpro() {  
+  function handleHome() {
     const root = ReactDOM.createRoot(document.getElementById("root"));
-    const element = <Serpro />;
-    root.render(element);
+
+    root.render(
+      <StrictMode>
+        <App />
+      </StrictMode>,
+    );
   }
 
   return (
@@ -46,7 +51,7 @@ const Header = () => {
         hasScrolled && "py-2 bg-black-100 backdrop-blur-[8px]",
       )}>
       <div className="container flex h-14 items-center max-lg:px-5">
-        <a className="lg:hidden flex-1 cursor-pointer rounded-14 z-2">
+        {/* <a className="lg:hidden flex-1 cursor-pointer rounded-14 z-2">
           <img
             src="/images/pzeronew.png"
             width={145}
@@ -54,7 +59,7 @@ const Header = () => {
             alt="logo"
             className="rounded-md"
           />
-        </a>
+        </a> */}
 
         <div
           className={clsx(
@@ -67,21 +72,14 @@ const Header = () => {
             <nav className="max-lg:relative max-lg:z-2 max-lg:my-auto">
               <ul className="flex max-lg:block max-lg:px-12">
                 <li className="nav-li">
-                  <NavLink title="funcionalidades" />
-                  <div className="dot" />
-                  {/* <NavLink title="soluções" /> */}
                   <h1
-                    onClick={""}
+                    onClick={handleHome}
                     className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
-                    SOLUÇÕES
+                    HOME
                   </h1>
+                  {/* <NavLink title="home"/> */}
                   <div className="dot" />
-                  <h1
-                    onClick={handleSerpro}
-                    className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
-                    SERPRO
-                  </h1>
-               
+                  <NavLink title="biometria" />
                 </li>
 
                 <li className="nav-logo">
@@ -104,12 +102,11 @@ const Header = () => {
                 </li>
 
                 <li className="nav-li">
-                  <NavLink title="preços" />
+                  <NavLink title="transito" />
                   <div className="dot" />
-                  <NavLink title="faq" />
+                  <NavLink title="fiscalização" />
                   <div className="dot" />
                   <NavLink title="contato" />
-                 
                 </li>
               </ul>
             </nav>
@@ -147,4 +144,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderSerpro;

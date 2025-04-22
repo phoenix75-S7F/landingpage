@@ -1,8 +1,9 @@
 "use client";
+import * as THREE from "three";
 import { cn } from "../../../lib/utils";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
-import * as THREE from "three";
+
 
 export const CanvasRevealEffect = ({
   animationSpeed = 0.4,
@@ -23,6 +24,7 @@ export const CanvasRevealEffect = ({
   dotSize?: number;
   showGradient?: boolean;
 }) => {
+
   return (
     <div className={cn("h-full relative bg-white w-full", containerClassName)}>
       <div className="h-full w-full">

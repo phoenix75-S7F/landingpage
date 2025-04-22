@@ -205,8 +205,8 @@ export const preços = [
   {
     id: "0",
     title: "PDV BÁSICO",
-    priceMonthly: 139.00,
-    priceYearly: 99.00,
+    priceMonthly: 139.0,
+    priceYearly: 99.0,
     caption: "Recursos essenciais para o seu PDV.",
     features: [
       "2 Usuários",
@@ -220,9 +220,10 @@ export const preços = [
   {
     id: "1",
     title: "ERP Intermediário",
-    priceMonthly: 249.00,
-    priceYearly: 199.00,
-    caption: "Funcionalidades para uma administração mais abrangente da sua empresa.",
+    priceMonthly: 249.0,
+    priceYearly: 199.0,
+    caption:
+      "Funcionalidades para uma administração mais abrangente da sua empresa.",
     features: [
       "3 Usários",
       "Plano PDV Básico e mais...",
@@ -236,8 +237,8 @@ export const preços = [
   {
     id: "2",
     title: "ERP Avançado",
-    priceMonthly: 389.00,
-    priceYearly: 329.00,
+    priceMonthly: 389.0,
+    priceYearly: 329.0,
     caption:
       "O pacote mais completo para atender todas as necessidades de administração de uma empresa.",
     features: [
@@ -262,7 +263,7 @@ export const preços = [
     features: [
       "Funcionalidades dos planos PDV Básico, ERP Intermediário ou ERP Avançado, conforme escolha do cliente",
       "Loja Virtual",
-      "Integração com Marketplaces: Mercado Livre, Shopee, Casas Bahia, Correios, NuvemShop, Shopify, Amazon, Americanas, Amazon.",      
+      "Integração com Marketplaces: Mercado Livre, Shopee, Casas Bahia, Correios, NuvemShop, Shopify, Amazon, Americanas, Amazon.",
       "Suporte Técnico",
     ],
     icon: "/images/hexagon.svg",
@@ -544,6 +545,12 @@ export const socials = [
     icon: "/images/socials/email.svg",
     url: "#",
   },
+  // {
+  //   id: "1",
+  //   title: "Instagram",
+  //   icon: "/images/socials/instagram.svg",
+  //   url: "#",
+  // },
 ];
 
 export const otherPages = [
@@ -570,5 +577,40 @@ export const terms = [
     imgURL: "/icons/home.svg",
     url: "/terms",
     title: "Termos de Uso",
+  },
+];
+
+export const projetos = [
+  {
+    id: 1,
+    title: "3D Solar System Planets to Explore",
+    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    img: "/p1.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "/ui.earth.com",
+  },
+  {
+    id: 2,
+    title: "Yoom - Video Conferencing App",
+    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    img: "/p2.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    link: "/ui.yoom.com",
+  },
+  {
+    id: 3,
+    title: "AI Image SaaS - Canva Application",
+    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    img: "/p3.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    link: "/ui.aiimg.com",
+  },
+  {
+    id: 4,
+    title: "Animated Apple Iphone 3D Website",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    img: "/p4.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "/ui.apple.com",
   },
 ];
