@@ -51,7 +51,7 @@ const HeaderSerpro = ({ navItems }) => {
         hasScrolled && "py-2 bg-black-100 backdrop-blur-[8px]",
       )}>
       <div className="container flex h-14 items-center max-lg:px-5">
-        {/* <a className="lg:hidden flex-1 cursor-pointer rounded-14 z-2">
+        <a className="lg:hidden flex-1 cursor-pointer rounded-14 z-2">
           <img
             src="/images/pzeronew.png"
             width={145}
@@ -59,7 +59,7 @@ const HeaderSerpro = ({ navItems }) => {
             alt="logo"
             className="rounded-md"
           />
-        </a> */}
+        </a>
 
         <div
           className={clsx(

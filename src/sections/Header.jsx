@@ -69,8 +69,9 @@ const Header = () => {
                 <li className="nav-li">
                   <NavLink title="funcionalidades" />
                   <div className="dot" />
+                  <NavLink title="preços" />
                   {/* <NavLink title="soluções" /> */}
-                  <h1
+                  {/* <h1
                     onClick={""}
                     className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
                     SOLUÇÕES
@@ -80,7 +81,7 @@ const Header = () => {
                     onClick={handleSerpro}
                     className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
                     SERPRO
-                  </h1>
+                  </h1> */}
                
                 </li>
 
@@ -104,8 +105,8 @@ const Header = () => {
                 </li>
 
                 <li className="nav-li">
-                  <NavLink title="preços" />
-                  <div className="dot" />
+                  {/* <NavLink title="preços" />
+                  <div className="dot" /> */}
                   <NavLink title="faq" />
                   <div className="dot" />
                   <NavLink title="contato" />
