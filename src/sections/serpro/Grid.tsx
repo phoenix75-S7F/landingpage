@@ -4,9 +4,9 @@ import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 
 const Biometria = () => {
   return (
-    <section>
+    <section className="-mt-32">
       <Element name="biometria">
-        <BentoGrid className="w-full py-20">
+        <BentoGrid className="w-full py-5">
           {gridItems.map((item, i) => (
             <BentoGridItem
               id={item.id}

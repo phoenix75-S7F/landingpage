@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import { Link as LinkScroll } from "react-scroll";
+import { Link as LinkScroll, Link } from "react-scroll";
 import * as ReactDOM from "react-dom/client";
 import clsx from "clsx";
-import Serpro from "../components/Serpro";
-import Solucoes from "../components/Solucoes"
+import { StrictMode } from "react";
+import App from "../App";
 
-const Header = () => {
+const HeaderSolucoes = ({ navItems }) => {
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -34,16 +34,14 @@ const Header = () => {
     </LinkScroll>
   );
 
-  function handleSerpro() {  
+  function handleHome() {
     const root = ReactDOM.createRoot(document.getElementById("root"));
-    const element = <Serpro />;
-    root.render(element);
-  }
 
-  function handleSolucoes() {  
-    const root = ReactDOM.createRoot(document.getElementById("root"));
-    const element = <Solucoes />;
-    root.render(element);
+    root.render(
+      <StrictMode>
+        <App />
+      </StrictMode>,
+    );
   }
 
   return (
@@ -52,7 +50,7 @@ const Header = () => {
         "fixed top-0 left-0 z-50 w-full py-10 transition-all duration-500 max-lg:py-4",
         hasScrolled && "py-2 bg-black-100 backdrop-blur-[8px]",
       )}>
-      <div className="container flex h-14 items-center max-lg:px-5">
+      <div className="container-solutions flex h-14 items-center max-lg:px-5">
         <a className="lg:hidden flex-1 cursor-pointer rounded-14 z-2">
           <img
             src="/images/pzeronew.png"
@@ -73,26 +71,7 @@ const Header = () => {
                  max-lg:min-h-screen max-lg:p-6 max-lg:overflow-hidden sidebar-before max-md:px-4">
             <nav className="max-lg:relative max-lg:z-2 max-lg:my-auto">
               <ul className="flex max-lg:block max-lg:px-12">
-                <li className="nav-li">
-                  <NavLink title="funcionalidades" />
-                  <div className="dot" />
-                  {/* <NavLink title="preços" /> */}
-                  {/* <NavLink title="soluções" /> */}
-                  <h1
-                    onClick={handleSolucoes}
-                    className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
-                    SOLUÇÕES
-                  </h1>
-                  <div className="dot" />
-                  <h1
-                    onClick={handleSerpro}
-                    className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
-                    SERPRO
-                  </h1>
-               
-                </li>
-
-                <li className="nav-logo">
+                <li className="nav-logoSolutions">
                   <LinkScroll
                     to="hero"
                     offset={-250}
@@ -111,13 +90,23 @@ const Header = () => {
                   </LinkScroll>
                 </li>
 
-                <li className="nav-li">
-                  <NavLink title="preços" />
+                <li className="nav-li-2">
+                  <h1
+                    onClick={handleHome}
+                    className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
+                    HOME
+                  </h1>
+                  {/* <NavLink title="home"/> */}
                   <div className="dot" />
-                  <NavLink title="faq" />
+                  <NavLink title="serviços" />               
+                  <div className="dot" />
+                  <NavLink title="quem somos" />
+                  <div className="dot" />
+                  <NavLink title="trabalhe conosco" />
                   <div className="dot" />
                   <NavLink title="contato" />
-                 
+                  <div className="dot" />
+                  <NavLink title="blog" />
                 </li>
               </ul>
             </nav>
@@ -155,4 +144,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderSolucoes;

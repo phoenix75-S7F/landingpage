@@ -64,13 +64,12 @@ export const BentoGridItem = ({
     },
   };
 
-  console.log("BENTOGRID");
-  console.log(id);
-  console.log(titleClassName);
   console.log(img);
+  console.log(id);
+  console.log(imgClassName);
+  console.log(titleClassName);
+  console.log("Verificando className");
   console.log(className);
-  console.log(description);
-  console.log(title);
 
   const handleCopy = () => {
     const text = "hsu@jsmastery.pro";
@@ -95,11 +94,35 @@ export const BentoGridItem = ({
       {/* add img divs */}
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
-          {img && (
+          {img && id === 1 && (
             <img
               src={img}
               alt={img}
-              className={cn(imgClassName, "object-cover object-center ")}
+              className={cn(imgClassName, "w-full h-96 object-fill")}
+            />
+          )}
+
+          {img && id === 2 && (
+            <img
+              src={img}
+              alt={img}
+              className={cn(imgClassName, "w-full h-40 object-fill")}
+            />
+          )}
+
+          {img && id === 3 && (
+            <img
+              src={img}
+              alt={img}
+              className={cn(imgClassName, "h-40 w-full object-fill")}
+            />
+          )}
+
+          {img && id !== 1 && id !== 2 && id !== 3 && (
+            <img
+              src={img}
+              alt={img}
+              className={cn(imgClassName, "object-fit object-center")}
             />
           )}
         </div>
@@ -136,29 +159,68 @@ export const BentoGridItem = ({
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
           {/* remove mb-2 mt-2 */}
 
+          {id === 1 && (
+            <>
+              <h1 className="font-normal lg:text-2xl md:text-xl text-base">
+                {description}
+              </h1>
+              <p
+                className="lg:text-xl lg:font-normal font-light text-sm"
+                style={{
+                  color: "#BEC1DD",
+                  // margin: "1vh 0",
+                }}>
+                {title}
+              </p>
+            </>
+          )}
+
           {id === 2 && (
             <>
-              <div className="max-w-36 text-center mb-7 h7 text-black-100 max-md:mb-6 max-md:h5">
+              <p
+                className="lg:text-xl lg:font-normal font-light text-sm pt-24 xs:pt-36"
+                style={{
+                  color: "#BEC1DD",
+                  margin: "2vh 0",
+                }}>
                 {title}
-              </div>
-              <div className="font-sans text-xl lg:text-xl max-w-96 max-h-96 font-bold z-10">
-                {description}
-              </div>
+              </p>
             </>
           )}
 
           {id === 3 && (
             <>
-              <div className="max-w-36 text-center mb-7 h7 text-black-100 max-md:mb-6 max-md:h5">
-                {title}
-              </div>
-              <div className="font-sans text-xl lg:text-xl max-w-96 max-h-96 font-bold z-10">
+              <h1 className="font-bold lg:text-2xl md:text-xl text-base">
                 {description}
-              </div>
+              </h1>
+              <p
+                className="lg:text-xl lg:font-normal font-light text-sm pt-24 xs:pt-36"
+                style={{
+                  color: "#BEC1DD",
+                  margin: "2vh 0",
+                }}>
+                {title}
+              </p>
             </>
           )}
 
-          {id !== 2 && id !== 3 && (
+          {id === 5 && (
+            <>
+              <h1 className="font-bold lg:text-2xl md:text-xl text-base">
+                {description}
+              </h1>
+              <p
+                className="lg:text-xl lg:font-normal font-light text-sm pt-28 xs:pt-36"
+                style={{
+                  color: "#BEC1DD",
+                  margin: "2vh 0",
+                }}>
+                {title}
+              </p>
+            </>
+          )}
+
+          {id !== 1 && id !== 2 && id !== 3 && id !== 5 && (
             <>
               <div className="font-sans top-0 md:max-w-96 md:text-xs lg:text-base text-xl text-p3 font-bold z-10">
                 {description}

@@ -286,6 +286,10 @@
     @apply mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4;
   }
 
+  .container-solutions {
+    @apply mx-auto max-w-[90%] px-0 max-xl:px-0 max-lg:px-2 max-sm:px-4;
+  }
+
   .caption {
     @apply small-2 mb-5 uppercase text-p3;
   }
@@ -313,8 +317,16 @@
     @apply relative flex flex-1 items-center justify-between max-lg:flex-col max-lg:items-start;
   }
 
+  .nav-li-2 {
+    @apply relative flex flex-auto items-center justify-between max-lg:flex-col max-lg:items-start;
+  }
+
   .nav-logo {
     @apply relative flex flex-1 items-center justify-center;
+  }
+
+  .nav-logoSolutions {
+    @apply relative flex flex-1 items-start justify-start;
   }
 
   .dot {
