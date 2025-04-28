@@ -77,13 +77,13 @@ const Header = () => {
                   <NavLink title="funcionalidades" />
                   <div className="dot" />
                   {/* <NavLink title="preços" /> */}
-                  {/* <NavLink title="soluções" /> */}
-                  <h1
+               
+                  {/* <h1
                     onClick={handleSolucoes}
                     className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
                     SOLUÇÕES
                   </h1>
-                  <div className="dot" />
+                  <div className="dot" /> */}
                   <h1
                     onClick={handleSerpro}
                     className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
