@@ -10,6 +10,7 @@ import Contact from "../sections/Contact"
 import Experience from "../sections/serpro/Experience"
 import Ficalizacao from "../sections/serpro/Approach"
 import Footer from "../sections/Footer"
+import HeroSolucoes from "../sections/HeroSolucoes";
 // import FloatingNav from "../sections/serpro/FloatingNavbar";
 
 const Solucoes = () => {
@@ -19,7 +20,7 @@ const Solucoes = () => {
       <div className="max-w-7xl w-full">
         {/* <FloatingNav navItems={navItems} /> */}
         <HeaderSolucoes navItems={navItems} />
-        <Hero />       
+        <HeroSolucoes />       
         {/* <Biometria />
         <Transito />        
         <Ficalizacao />  */}
