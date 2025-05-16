@@ -25,6 +25,29 @@ export const funcionalidades = [
   },
 ];
 
+export const teste = [
+  {
+    id: "0",
+    icon: "/images/feature-1.png",
+    caption: "Fácil integração",
+    title: "Sua empresa não precisa fazer um alto investimento para ter o mais completo software de gestão do mercado!",
+    text: "",
+    button: {
+      icon: "/images/magictouch.svg",
+      title: "Entre em Contato",
+      url: "/contato",
+    },
+  },
+  {
+    id: "1",
+    icon: "/images/price.png",
+    caption: "",
+    title: "",
+    text: "",
+   
+  },
+];
+
 export const sobre = [
   {
     id: "0",
@@ -270,6 +293,8 @@ export const preços = [
     logo: "/images/plan-3.png",
   },
 ];
+
+
 
 export const testimonials = [
   {

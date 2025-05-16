@@ -49,7 +49,7 @@ const Pricing = () => {
             <p className="base-bold mt-9 text-center text-p3 before:mx-2.5 before:content-['-'] after:mx-2.5 after:content-['-']">
               Taxa de implantação Grátis - por tempo limitado
             </p>
-            
+
             <div className="pricing-bg">
               <img
                 src="/images/bg-outlines.svg"

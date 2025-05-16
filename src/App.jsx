@@ -2,6 +2,7 @@ import Features from "./sections/Features";
 import Header from "./sections/Header";
 import Hero from "./sections/Hero";
 import Pricing from "./sections/Pricing";
+import Teste from "./sections/Teste";
 import Faq from "./sections/Faq";
 // import Testimonials from "./sections/Testimonials"
 // import Home from "./pages/Serpropage"
@@ -26,7 +27,8 @@ const App = () => {
 			<Header />
 			<Hero />
 			<Features />
-			<Pricing />
+			<Teste/>
+			{/* <Pricing /> */}
 			<Faq />
 			{/* <Home /> */}
 			{/* <Testimonials /> */}
