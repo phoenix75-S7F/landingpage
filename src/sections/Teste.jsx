@@ -15,17 +15,20 @@ function handleStart(plan) {
 }
 
 const Teste = () => {
-  const [monthly, setMonthly] = useState(false);
-
   return (
     <section>
       <Element name="preços">
         <div className="container">
           <div className="max-w-960 pricing-head_before relative mx-auto border-l border-r border-s2 bg-s1/50 pb-40 pt-28 max-xl:max-w-4xl max-lg:border-none max-md:pb-32 max-md:pt-16">
-            {/* <h3 className="h3 max-lg:h4 max-md:h5 z-3 relative mx-auto mb-14 max-w-lg text-center text-p4 max-md:mb-11 max-sm:max-w-sm">
-              Preços flexíveis para empresas de todos os tamanhos!
-            </h3> */}
+            <h3 className="h3 max-lg:h4 max-md:h5 z-3 relative mx-auto -mb-20 max-w-lg text-center text-p4 max-md:mb-11 max-sm:max-w-sm">
+              " Controle total para sua empresa! "
+            </h3>
 
+            <div>
+              <p className="base-bold mt-32 -mb-28 text-center text-p3 before:mx-2.5 before:content-['-'] after:mx-2.5 after:content-['-']">
+                PONTO ZERO SOLUÇÕES EM SOFTWARE
+              </p>
+            </div>
             {/* <div className="pricing-bg">
               <img
                 src="/images/bg-outlines.svg"
@@ -56,22 +59,22 @@ const Teste = () => {
                     {id == 0 && (
                       <img
                         src={icon}
-                        className="size-28 object-contain"
+                        className="size-20 object-contain"
                         alt={title}
                       />
                     )}
 
-                      {id == 1 && (
+                    {id == 1 && (
                       <img
                         src={icon}
-                        className="w-full object-contain"
+                        className="w-full object-contain border-s2 rounded-7xl"
                         alt={title}
                       />
                     )}
                   </div>
                 </div>
-                <p className="caption mb-5 max-md:mb-6">{caption}</p>
-                <h2 className="max-w-400 mb-7 h3 text-p4 max-md:mb-6 max-md:h5">
+                {/* <p className="caption mb-5 max-md:mb-6">{caption}</p> */}
+                <h2 className="max-w-400 mb-7 h3 text-white text-center max-md:mb-6 max-md:h5">
                   {title}
                 </h2>
                 {/* <p className="mb-11 body-1 max-md:mb-8 max-md:body-3">

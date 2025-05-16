@@ -30,7 +30,7 @@ export const teste = [
     id: "0",
     icon: "/images/feature-1.png",
     caption: "Fácil integração",
-    title: "Sua empresa não precisa fazer um alto investimento para ter o mais completo software de gestão do mercado!",
+    title: "Sua empresa não precisa fazer um alto investimento para ter o melhor e mais completo software de gestão do mercado!",
     text: "",
     button: {
       icon: "/images/magictouch.svg",
