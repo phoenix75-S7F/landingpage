@@ -28,7 +28,7 @@ const Header = () => {
       spy
       smooth
       activeClass="nav-active"
-      className="base-bold text-p4 uppercase 
+      className="base-bold text-p3 uppercase 
         transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
       {title}
     </LinkScroll>
@@ -86,10 +86,10 @@ const Header = () => {
                   <div className="dot" /> */}
                   <h1
                     onClick={handleSerpro}
-                    className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
+                    className="base-bold text-p3 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
                     SERPRO
                   </h1>
-               
+               <div className="dot" />
                 </li>
 
                 <li className="nav-logo">
@@ -112,7 +112,7 @@ const Header = () => {
                 </li>
 
                 <li className="nav-li">
-                  <NavLink title="preços" />
+                  {/* <NavLink title="preços" /> */}
                   <div className="dot" />
                   <NavLink title="faq" />
                   <div className="dot" />
