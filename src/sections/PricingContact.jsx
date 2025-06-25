@@ -14,7 +14,7 @@ function handleStart(plan) {
   root.render(element);
 }
 
-const Teste = () => {
+const PricingContact = () => {
   return (
     <section>
       <Element name="preços">
@@ -95,4 +95,4 @@ const Teste = () => {
   );
 };
 
-export default Teste;
+export default PricingContact;

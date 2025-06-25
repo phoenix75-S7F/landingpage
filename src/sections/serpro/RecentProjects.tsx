@@ -6,8 +6,8 @@ import { Element } from "react-scroll";
 import { projetos } from "../../data";
 import { PinContainer } from "./ui/Pin";
 
-console.log("PROJETOS");
-console.log(projetos);
+// console.log("PROJETOS");
+// console.log(projetos);
 
 const Transito = () => {
   return (
