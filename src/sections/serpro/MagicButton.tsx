@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 /**
  *  UI: border magic from tailwind css btns
@@ -22,6 +23,7 @@ const MagicButton = ({
   otherClasses?: string;
 }) => {
   return (
+    <Link to="contato">
     <button
       className="relative inline-flex h-12 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1px] focus:outline-none"
       onClick={handleClick}
@@ -38,6 +40,7 @@ const MagicButton = ({
         {position === "right" && icon}
       </span>
     </button>
+    </Link>
   );
 };
 

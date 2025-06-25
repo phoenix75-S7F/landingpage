@@ -38,8 +38,7 @@ const Features = () => {
                       <Button icon={button.icon}>
                         <LinkScroll to="contato">
                            {button.title}
-                        </LinkScroll>
-                        
+                        </LinkScroll>                        
                       </Button>
                     </div>
                 ))}

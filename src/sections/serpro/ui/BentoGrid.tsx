@@ -10,6 +10,14 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "../../../data/confetti.json";
 import MagicButton from "../MagicButton";
+import Button from "../../../components/Button"
+import { Element, Link as LinkScroll } from "react-scroll"
+
+// const handleCopy = () => {
+//   const root = ReactDOM.createRoot(document.getElementById("root"));
+//   const element = <Startpage type={plan} />;
+//   root.render(element);
+// };
 
 export const BentoGrid = ({
   className,
@@ -64,15 +72,8 @@ export const BentoGridItem = ({
     },
   };
 
-  console.log(img);
-  console.log(id);
-  console.log(imgClassName);
-  console.log(titleClassName);
-  console.log("Verificando className");
-  console.log(className);
-
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "contato@pontozerosolucoes.com.br";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -98,7 +99,10 @@ export const BentoGridItem = ({
             <img
               src={img}
               alt={img}
-              className={cn(imgClassName, "w-full lg:h-512 xs:h-330 object-center")}
+              className={cn(
+                imgClassName,
+                "w-full lg:h-512 xs:h-330 object-center",
+              )}
             />
           )}
 
@@ -222,9 +226,9 @@ export const BentoGridItem = ({
 
           {id === 4 && (
             <>
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-3xl xs:text-xl">
-            {title}
-            </div>
+              <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-3xl xs:text-xl">
+                {title}
+              </div>
               {/* <h1 className="font-bold lg:text-2xl md:text-xl text-base">
                 {description}
               </h1>
@@ -313,12 +317,12 @@ export const BentoGridItem = ({
               </div>
 
               <MagicButton
-                title={copied ? "Email is Copied!" : "Saiba mais!"}
+                title={"Saiba mais!"}
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}
                 otherClasses="!bg-[#161A31]"
-              />
+              />                                  
             </div>
           )}
         </div>
