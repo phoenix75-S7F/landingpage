@@ -196,7 +196,7 @@ export const faq = [
     id: "5",
     question: "Central de Integrações!",
     answer:
-      "Com a central de integrações do Venda ERP você conecta seu sistema com mais de uma loja em cada plataforma. E, claro, pode gerenciar todas as suas operações, estoques, vendas, emissão de notas, controle de pagamentos e entregas.",
+      "Com a central de integrações, você conecta seu sistema com mais de uma loja em cada plataforma. E, claro, pode gerenciar todas as suas operações, estoques, vendas, emissão de notas, controle de pagamentos e entregas.",
   },
   {
     id: "6",
